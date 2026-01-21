@@ -23,7 +23,7 @@ public class ProcessamentoDeDados {
         a = 5;
         c = 2;
 
-        resultado = a / c;
+        resultado = (double) a / c;
         System.out.println(resultado);
 
 
