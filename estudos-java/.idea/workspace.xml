@@ -1,23 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82ac03f9-794d-44b4-9b17-55488b217a65" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Aula03TiposPrimitivosExercicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/copilot.data.migration.ask.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" beforeDir="false" />
+    <list default="true" id="82ac03f9-794d-44b4-9b17-55488b217a65" name="Changes" comment="reestruturei a pasta do projeto">
+      <change afterPath="$PROJECT_DIR$/src/Aula04OperadoresAritmeticos01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EntradaDeDados.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExercicioIA01.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExercicioSaidaDeDados.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProcessamentoDeDados.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SaidaDeDados.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../estudos.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,28 +30,33 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="38c2DgTokcifSo2c2d5qXi9dTHF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Aula03TiposPrimitivosExercicio.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Aula03TiposPrimitivosExercicio.executor": "Debug",
+    "Application.Aula04OperadoresAritmeticos01.executor": "Run",
+    "Application.OperadoresAritmeticos01.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.completions.CompletionsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Application.Aula04OperadoresAritmeticos01">
     <configuration name="Aula03TiposPrimitivosExercicio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Aula03TiposPrimitivosExercicio" />
       <module name="estudos-java" />
@@ -73,8 +64,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Aula04OperadoresAritmeticos01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Aula04OperadoresAritmeticos01" />
+      <module name="estudos-java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Aula04OperadoresAritmeticos01" />
         <item itemvalue="Application.Aula03TiposPrimitivosExercicio" />
       </list>
     </recent_temporary>
@@ -97,11 +96,16 @@
       <workItem from="1769084422345" duration="588000" />
       <workItem from="1769085038772" duration="77000" />
       <workItem from="1769085128952" duration="18000" />
+      <workItem from="1769085162526" duration="11138000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="reestruturei a pasta do projeto" />
+    <option name="LAST_COMMIT_MESSAGE" value="reestruturei a pasta do projeto" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
