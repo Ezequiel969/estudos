@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="7d471264-1ed4-4a3e-993c-69e0d30d5c80" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProcessamentoDeDados.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProcessamentoDeDados.java" afterDir="false" />
+=======
     <list default="true" id="82ac03f9-794d-44b4-9b17-55488b217a65" name="Changes" comment="reestruturei a pasta do projeto">
       <change afterPath="$PROJECT_DIR$/src/Aula04OperadoresAritmeticos01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 914ec9eb7829c6871762d9b098dc5346cdd10280
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,10 +32,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
+<<<<<<< HEAD
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="38aVlJR0CODNK3ib2Z69azHWJx2" />
+=======
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="38c2DgTokcifSo2c2d5qXi9dTHF" />
+>>>>>>> 914ec9eb7829c6871762d9b098dc5346cdd10280
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -48,6 +60,14 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+<<<<<<< HEAD
+    "last_opened_file_path": "C:/Users/Kiel/IdeaProjects/estudos/estudos-java",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+=======
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -59,11 +79,19 @@
   <component name="RunManager" selected="Application.Aula04OperadoresAritmeticos01">
     <configuration name="Aula03TiposPrimitivosExercicio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Aula03TiposPrimitivosExercicio" />
+>>>>>>> 914ec9eb7829c6871762d9b098dc5346cdd10280
       <module name="estudos-java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="estudos-java" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+=======
     <configuration name="Aula04OperadoresAritmeticos01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Aula04OperadoresAritmeticos01" />
       <module name="estudos-java" />
@@ -77,6 +105,7 @@
         <item itemvalue="Application.Aula03TiposPrimitivosExercicio" />
       </list>
     </recent_temporary>
+>>>>>>> 914ec9eb7829c6871762d9b098dc5346cdd10280
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -92,11 +121,17 @@
       <created>1769084421279</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
+      <updated>1769037822826</updated>
+      <workItem from="1769037825718" duration="31000" />
+      <workItem from="1769040391935" duration="24000" />
+=======
       <updated>1769084421279</updated>
       <workItem from="1769084422345" duration="588000" />
       <workItem from="1769085038772" duration="77000" />
       <workItem from="1769085128952" duration="18000" />
       <workItem from="1769085162526" duration="11138000" />
+>>>>>>> 914ec9eb7829c6871762d9b098dc5346cdd10280
     </task>
     <servers />
   </component>
