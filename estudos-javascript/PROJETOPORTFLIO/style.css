@@ -6,14 +6,14 @@
 }
 
 :root {
-    --primary-color: #7c3aed;
-    --secondary-color: #a855f7;
-    --dark-color: #0f172a;
-    --light-color: #1e293b;
-    --text-color: #cbd5e1;
-    --border-color: #334155;
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.5);
+    --primary-color: #39ff14; /* Hacker Green */
+    --secondary-color: #0a9308; /* Darker Green */
+    --dark-color: #1a1a1a;
+    --light-color: #2a2a2a;
+    --text-color: #1c2733; /* Original dark text for light backgrounds */
+    --border-color: var(--primary-color);
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.7);
     --transition: all 0.3s ease;
 }
 
@@ -23,26 +23,31 @@ html {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--text-color);
-    background-color: #525252;
+    color: #e0e0e0; /* Brighter light gray text */
+    background-color: #0d0d0d;
+    background-image:
+        linear-gradient(rgba(0, 255, 0, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 0, 0.05) 1px, transparent 1px);
+    background-size: 3rem 3rem;
     line-height: 1.6;
 }
 
 /* ==================== CONTAINER ==================== */
 .container {
-    max-width: 1200px;
+    max-width: 1320px; /* Increased width */
     margin: 0 auto;
     padding: 0 20px;
 }
 
 /* ==================== TYPOGRAPHY ==================== */
 h1, h2, h3, h4, h5, h6 {
-    color: var(--dark-color);
+    color: var(--primary-color);
     font-weight: 700;
+    text-shadow: 0 0 5px rgba(57, 255, 20, 0.5); /* Add a subtle glow */
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.8;
 }
 
@@ -50,13 +55,13 @@ p {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 20px;
-    color: var(--dark-color);
+    color: #f0f0f0;
 }
 
 .section-subtitle {
     text-align: center;
     font-size: 1.2rem;
-    color: var(--text-color);
+    color: #cccccc;
     margin-bottom: 3rem;
 }
 
@@ -104,8 +109,9 @@ p {
 
 /* ==================== NAVIGATION ==================== */
 .navbar {
-    background: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    background: #000000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid var(--primary-color);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -135,7 +141,7 @@ p {
 }
 
 .nav-links a {
-    color: var(--text-color);
+    color: #e0e0e0;
     text-decoration: none;
     font-weight: 500;
     transition: var(--transition);
@@ -163,22 +169,23 @@ p {
 
 /* ==================== HERO SECTION ==================== */
 .hero {
-    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-    padding: 100px 0;
+    background: transparent;
+    padding: 80px 0;
     min-height: 100vh;
     display: flex;
     align-items: center;
 }
 
-.hero .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+.hero .hero-content {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    gap: 2rem;
 }
 
 .hero-text h1 {
-    font-size: 4rem;
+    font-size: 4.5rem; /* Increased font size */
     line-height: 1.2;
     margin-bottom: 1rem;
 }
@@ -192,7 +199,7 @@ p {
 
 .hero-description {
     font-size: 1.1rem;
-    color: var(--text-color);
+    color: #e0e0e0;
     margin-bottom: 2rem;
     max-width: 500px;
 }
@@ -208,13 +215,15 @@ p {
     height: 350px;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 150px;
-    color: white;
     box-shadow: var(--shadow-lg);
     animation: float 3s ease-in-out infinite;
+    overflow: hidden; /* Ensures image stays within the circle */
+}
+
+.avatar-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area, maintaining aspect ratio */
 }
 
 @keyframes float {
@@ -224,13 +233,13 @@ p {
 
 /* ==================== ABOUT SECTION ==================== */
 .about {
-    padding: 100px 0;
-    background: white;
+    padding: 80px 0;
+    background: transparent;
 }
 
 .about .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr; /* Emphasize text over image */
     gap: 3rem;
     align-items: center;
 }
@@ -282,8 +291,8 @@ p {
 
 /* ==================== SKILLS SECTION ==================== */
 .skills {
-    padding: 100px 0;
-    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    padding: 80px 0;
+    background: transparent;
 }
 
 .skills-grid {
@@ -342,8 +351,8 @@ p {
 
 /* ==================== PROJECTS SECTION ==================== */
 .projects {
-    padding: 100px 0;
-    background: white;
+    padding: 80px 0;
+    background: transparent;
 }
 
 .projects-grid {
@@ -422,12 +431,12 @@ p {
 
 /* ==================== EXPERIENCE SECTION ==================== */
 .experience {
-    padding: 100px 0;
-    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    padding: 80px 0;
+    background: transparent;
 }
 
 .timeline {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -500,8 +509,8 @@ p {
 
 /* ==================== CONTACT SECTION ==================== */
 .contact {
-    padding: 100px 0;
-    background: white;
+    padding: 80px 0;
+    background: transparent;
 }
 
 .contact-content {
@@ -693,7 +702,7 @@ p {
         left: -100%;
         top: 60px;
         flex-direction: column;
-        background: rgb(0, 0, 0);
+        background: rgb(202, 157, 157);
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -706,8 +715,8 @@ p {
         left: 0;
     }
 
-    .hero .container {
-        grid-template-columns: 1fr;
+    .hero .hero-content {
+        text-align: center;
     }
 
     .hero-text h1 {
@@ -854,3 +863,39 @@ p {
 .project-card:nth-child(4) { animation-delay: 0.4s; }
 .project-card:nth-child(5) { animation-delay: 0.5s; }
 .project-card:nth-child(6) { animation-delay: 0.6s; }
+/* --- HACKER THEME LEGIBILITY OVERRIDES --- */
+
+/* Ensure text on light cards is dark and legible */
+.skill-card,
+.timeline-content,
+.info-item,
+.project-card {
+    color: var(--text-color);
+}
+
+/* Ensure paragraphs and lists on light cards are dark */
+.skill-card p,
+.timeline-content p,
+.timeline-content li,
+.info-item p,
+.project-card p {
+    color: var(--text-color);
+}
+
+/* Headings on light cards should also be dark, overriding the global green color */
+.skill-card h3,
+.project-content h3,
+.timeline-content h3 {
+    color: #111; /* A very dark color for headings on cards */
+    text-shadow: none; /* Remove glow on light backgrounds */
+}
+
+/* .info-item h3 uses a gradient, but we'll reset its shadow */
+.info-item h3 {
+    text-shadow: none;
+}
+
+/* Ensure menu toggle is visible */
+.menu-toggle span {
+    background: white;
+}
