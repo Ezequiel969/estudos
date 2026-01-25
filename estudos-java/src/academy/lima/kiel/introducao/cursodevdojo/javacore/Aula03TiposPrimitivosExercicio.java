@@ -1,4 +1,4 @@
-package academy.lima.kiel.introducao.cursodevdojo;
+package academy.lima.kiel.introducao.cursodevdojo.javacore;
 /*
 Prática
 

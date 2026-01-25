@@ -1,4 +1,4 @@
-package academy.lima.kiel.introducao.cursodevdojo;
+package academy.lima.kiel.introducao.cursodevdojo.javacore;
 
 public class Aula02TiposPrimitivos {
     public static void main(String[] args) {

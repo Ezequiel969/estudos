@@ -1,4 +1,4 @@
-package academy.lima.kiel.introducao.cursodevdojo;
+package academy.lima.kiel.introducao.cursodevdojo.javacore;
 
 public class Aula04Operadores {
     public static void main(String[] args) {

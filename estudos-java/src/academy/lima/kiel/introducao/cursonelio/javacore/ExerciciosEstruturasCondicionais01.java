@@ -1,5 +1,4 @@
-package academy.lima.kiel.introducao.cursonelio;
-
+package academy.lima.kiel.introducao.cursonelio.javacore;
 import java.util.Scanner;
 
 public class ExerciciosEstruturasCondicionais01 {
@@ -12,5 +11,8 @@ public class ExerciciosEstruturasCondicionais01 {
         }else {
             System.out.println("NEGATIVO");
         }
+
+
+        scanner.close();
     }
 }

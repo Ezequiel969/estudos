@@ -1,5 +1,4 @@
-package academy.lima.kiel.introducao.cursonelio;
-
+package academy.lima.kiel.introducao.cursonelio.javacore;
 import java.util.Scanner;
 
 public class Exercicio01 {

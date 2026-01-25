@@ -1,5 +1,4 @@
-package academy.lima.kiel.introducao.cursonelio;
-
+package academy.lima.kiel.introducao.cursonelio.javacore;
 import java.util.Locale;
 import java.util.Scanner;
 

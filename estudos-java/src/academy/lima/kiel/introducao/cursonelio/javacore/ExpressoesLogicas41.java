@@ -1,5 +1,4 @@
-package academy.lima.kiel.introducao.cursonelio;
-
+package academy.lima.kiel.introducao.cursonelio.javacore;
 public class ExpressoesLogicas41 {
     public static void main(String[] args) {
         // Expressões lógicas
