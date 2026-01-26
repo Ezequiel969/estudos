@@ -1,9 +1,7 @@
-package academy.lima.kiel.introducao.cursonelio.javaOO;
-
+package academy.lima.kiel.introducao.cursonelio.javaOO.aplications;
 import java.util.Locale;
 import java.util.Scanner;
-
-import academy.lima.kiel.introducao.cursonelio.javaOO.ClassesProblemaOO.Triangle;
+import academy.lima.kiel.introducao.cursonelio.javaOO.entities.Triangle;
 
 public class ProblemaTriangle {
     public static void main(String[] args) {
