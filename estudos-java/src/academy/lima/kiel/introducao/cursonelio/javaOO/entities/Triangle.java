@@ -1,4 +1,4 @@
-package academy.lima.kiel.introducao.cursonelio.javaOO.ClassesProblemaOO;
+package academy.lima.kiel.introducao.cursonelio.javaOO.entities;
 
 public class Triangle {
     public double a;

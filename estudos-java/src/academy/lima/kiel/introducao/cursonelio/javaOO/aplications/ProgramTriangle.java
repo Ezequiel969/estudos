@@ -1,9 +1,11 @@
 package academy.lima.kiel.introducao.cursonelio.javaOO.aplications;
+
 import java.util.Locale;
 import java.util.Scanner;
+
 import academy.lima.kiel.introducao.cursonelio.javaOO.entities.Triangle;
 
-public class ProblemaTriangle {
+public class ProgramTriangle {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner scanner = new Scanner(System.in);
