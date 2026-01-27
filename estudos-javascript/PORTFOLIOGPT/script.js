@@ -5,6 +5,278 @@
  * =====================================================
  */
 
+// ==================== TRANSLATIONS ====================
+const translations = {
+    en: {
+        // Navigation
+        'nav.about': 'About',
+        'nav.experience': 'Experience',
+        'nav.projects': 'Projects',
+        'nav.skills': 'Skills',
+        'nav.contact': 'Contact',
+        'nav.available': 'Available for projects',
+        'accessibility.skip': 'Skip to main content',
+        
+        // Hero
+        'hero.badge': 'Backend Developer',
+        'hero.greeting': "Hello, I'm",
+        'hero.description': 'I build <span class="highlight">scalable systems</span>, clean APIs, and reliable backend infrastructure. Currently expanding into <span class="highlight">full-stack</span> development.',
+        'hero.cta.projects': 'View Projects',
+        'hero.cta.contact': 'Get In Touch',
+        'hero.stack': 'Tech Stack',
+        'hero.projects': 'Projects',
+        'hero.years': 'Years Exp.',
+        'hero.scroll': 'Scroll to explore',
+        
+        // About
+        'about.tag': 'About Me',
+        'about.title': 'Building reliable systems<br><span class="gradient-text">with clean architecture</span>',
+        'about.p1': "I'm a <strong>backend-focused Python developer</strong> with a passion for building systems that scale. My journey started with automating tasks and quickly evolved into designing APIs and database architectures.",
+        'about.p2': "Currently, I'm expanding my skillset into <strong>full-stack development</strong>, learning modern frontend technologies while maintaining my focus on solid backend foundations.",
+        'about.stats.projects': 'Projects',
+        'about.stats.technologies': 'Technologies',
+        'about.stats.commits': 'Commits',
+        'about.features.api.title': 'Clean APIs',
+        'about.features.api.desc': 'RESTful APIs built with FastAPI and Django',
+        'about.features.database.title': 'Database Design',
+        'about.features.database.desc': 'PostgreSQL optimization and data modeling',
+        'about.features.testing.title': 'Proper Testing',
+        'about.features.testing.desc': 'Unit tests, integration tests, and CI/CD',
+        'about.cta': "Let's Talk",
+        
+        // Experience
+        'experience.tag': 'Experience',
+        'experience.title': 'My Professional Journey',
+        'experience.description': 'An overview of my software development path',
+        'experience.item1.date': '2024 - Present',
+        'experience.item1.title': 'Backend Developer',
+        'experience.item1.company': 'Freelance Projects',
+        'experience.item1.description': 'Building complete backend systems, from API architecture to database design. Focus on Python, FastAPI, and Django.',
+        'experience.item2.date': '2023 - 2024',
+        'experience.item2.title': 'Intensive Studies',
+        'experience.item2.company': 'Self-taught Training',
+        'experience.item2.description': 'Period dedicated to deepening knowledge in software architecture, APIs, DevOps and best development practices.',
+        'experience.item3.date': '2022 - 2023',
+        'experience.item3.title': 'Beginning of the Journey',
+        'experience.item3.company': 'First Projects',
+        'experience.item3.description': 'Building first personal projects, learning programming fundamentals, version control with Git and Python basics.',
+        
+        // Projects
+        'projects.tag': 'Portfolio',
+        'projects.title': 'Featured Projects',
+        'projects.description': "Projects I've built with passion and dedication",
+        'projects.featured.label': 'Featured Project',
+        'projects.featured.title': 'E-commerce REST API',
+        'projects.featured.description': 'Complete e-commerce backend with JWT authentication, shopping cart management, real-time order processing and admin dashboard. Built with FastAPI and PostgreSQL for high performance.',
+        'projects.viewCode': 'View Code',
+        'projects.viewDemo': 'View Demo',
+        'projects.card1.title': 'Analytics Dashboard API',
+        'projects.card1.excerpt': 'REST API for data analysis with Redis cache and Swagger documentation.',
+        'projects.card1.description': 'Complete analytics system with optimized endpoints, intelligent caching and full documentation via Swagger/OpenAPI.',
+        'projects.card2.title': 'Real-time Chat API',
+        'projects.card2.excerpt': 'WebSocket-based messaging backend with room support and message history.',
+        'projects.card2.description': 'Real-time chat backend with conversation history, push notifications and support for multiple simultaneous rooms.',
+        'projects.card3.title': 'Auth Service',
+        'projects.card3.excerpt': 'Authentication microservice with OAuth2 and complete audit logging.',
+        'projects.card3.description': 'Enterprise authentication system with OAuth2, refresh tokens, rate limiting and audit logs.',
+        'projects.card4.title': 'Data Processing API',
+        'projects.card4.excerpt': 'Backend service for data processing with async tasks and reports.',
+        'projects.card4.description': 'Data processing backend with async task queues, scheduled jobs and PDF report generation.',
+        'projects.card5.title': 'Task Manager API',
+        'projects.card5.excerpt': 'Task management backend with REST API and user collaboration.',
+        'projects.card5.description': 'Project management backend with full CRUD, user permissions and notification system.',
+        'projects.githubCta': 'See more on GitHub',
+        
+        // Skills
+        'skills.tag': 'Technologies',
+        'skills.title': 'Stack & Tools',
+        'skills.description': 'Technologies I work with daily',
+        'skills.backend': 'Backend',
+        'skills.frontend': 'Frontend',
+        'skills.database': 'Database',
+        'skills.devops': 'DevOps & Tools',
+        
+        // Contact
+        'contact.tag': 'Contact',
+        'contact.title': "Let's build something<br><span class=\"gradient-text\">amazing together?</span>",
+        'contact.description': "I'm always open to discussing new projects, creative opportunities or ways to be part of your visions. Let's talk!",
+        'contact.code.from': '"You"',
+        'contact.code.subject': '"Amazing Project"',
+        
+        // Footer
+        'footer.tagline': 'Turning ideas into quality code',
+        'footer.navigation': 'Navigation',
+        'footer.social': 'Social',
+        'footer.copyright': '© 2026 Ezequiel Lima. Made with <span class="heart">♥</span> and lots of coffee.',
+        'footer.tech': 'Built with pure JavaScript'
+    },
+    'pt-BR': {
+        // Navigation
+        'nav.about': 'Sobre',
+        'nav.experience': 'Experiência',
+        'nav.projects': 'Projetos',
+        'nav.skills': 'Skills',
+        'nav.contact': 'Contato',
+        'nav.available': 'Disponível para projetos',
+        'accessibility.skip': 'Pular para conteúdo principal',
+        
+        // Hero
+        'hero.badge': 'Desenvolvedor Backend',
+        'hero.greeting': 'Olá, eu sou',
+        'hero.description': 'Construo <span class="highlight">sistemas escaláveis</span>, APIs limpas e infraestrutura backend confiável. Atualmente expandindo para desenvolvimento <span class="highlight">full-stack</span>.',
+        'hero.cta.projects': 'Ver Projetos',
+        'hero.cta.contact': 'Fale Comigo',
+        'hero.stack': 'Tech Stack',
+        'hero.projects': 'Projetos',
+        'hero.years': 'Anos Exp.',
+        'hero.scroll': 'Role para explorar',
+        
+        // About
+        'about.tag': 'Sobre Mim',
+        'about.title': 'Construindo sistemas confiáveis<br><span class="gradient-text">com arquitetura limpa</span>',
+        'about.p1': 'Sou um <strong>desenvolvedor Python focado em backend</strong> com paixão por construir sistemas que escalam. Minha jornada começou automatizando tarefas e rapidamente evoluiu para design de APIs e arquiteturas de banco de dados.',
+        'about.p2': 'Atualmente, estou expandindo minhas habilidades para <strong>desenvolvimento full-stack</strong>, aprendendo tecnologias frontend modernas enquanto mantenho meu foco em fundamentos sólidos de backend.',
+        'about.stats.projects': 'Projetos',
+        'about.stats.technologies': 'Tecnologias',
+        'about.stats.commits': 'Commits',
+        'about.features.api.title': 'APIs Limpas',
+        'about.features.api.desc': 'APIs RESTful construídas com FastAPI e Django',
+        'about.features.database.title': 'Design de Banco',
+        'about.features.database.desc': 'Otimização PostgreSQL e modelagem de dados',
+        'about.features.testing.title': 'Testes Adequados',
+        'about.features.testing.desc': 'Testes unitários, integração e CI/CD',
+        'about.cta': 'Vamos Conversar',
+        
+        // Experience
+        'experience.tag': 'Experiência',
+        'experience.title': 'Minha Jornada Profissional',
+        'experience.description': 'Uma visão geral da minha trajetória em desenvolvimento',
+        'experience.item1.date': '2024 - Presente',
+        'experience.item1.title': 'Desenvolvedor Backend',
+        'experience.item1.company': 'Projetos Freelance',
+        'experience.item1.description': 'Construindo sistemas backend completos, desde arquitetura de API até design de banco de dados. Foco em Python, FastAPI e Django.',
+        'experience.item2.date': '2023 - 2024',
+        'experience.item2.title': 'Estudos Intensivos',
+        'experience.item2.company': 'Formação Autodidata',
+        'experience.item2.description': 'Período dedicado ao aprofundamento em arquitetura de software, APIs, DevOps e melhores práticas de desenvolvimento.',
+        'experience.item3.date': '2022 - 2023',
+        'experience.item3.title': 'Início da Jornada',
+        'experience.item3.company': 'Primeiros Projetos',
+        'experience.item3.description': 'Construção dos primeiros projetos pessoais, aprendendo fundamentos de programação, versionamento com Git e fundamentos Python.',
+        
+        // Projects
+        'projects.tag': 'Portfólio',
+        'projects.title': 'Projetos em Destaque',
+        'projects.description': 'Projetos que construí com paixão e dedicação',
+        'projects.featured.label': 'Projeto Destaque',
+        'projects.featured.title': 'API REST E-commerce',
+        'projects.featured.description': 'Backend completo de e-commerce com autenticação JWT, gerenciamento de carrinho, processamento de pedidos em tempo real e painel admin. Construído com FastAPI e PostgreSQL para alta performance.',
+        'projects.viewCode': 'Ver Código',
+        'projects.viewDemo': 'Ver Demo',
+        'projects.card1.title': 'API Dashboard Analytics',
+        'projects.card1.excerpt': 'API REST para análise de dados com cache Redis e documentação Swagger.',
+        'projects.card1.description': 'Sistema completo de analytics com endpoints otimizados, cache inteligente e documentação completa via Swagger/OpenAPI.',
+        'projects.card2.title': 'API Chat em Tempo Real',
+        'projects.card2.excerpt': 'Backend de mensagens com WebSocket, suporte a salas e histórico.',
+        'projects.card2.description': 'Backend de chat em tempo real com histórico de conversas, notificações push e suporte a múltiplas salas simultâneas.',
+        'projects.card3.title': 'Serviço de Auth',
+        'projects.card3.excerpt': 'Microsserviço de autenticação com OAuth2 e auditoria completa.',
+        'projects.card3.description': 'Sistema de autenticação enterprise com OAuth2, refresh tokens, rate limiting e logs de auditoria.',
+        'projects.card4.title': 'API de Processamento',
+        'projects.card4.excerpt': 'Serviço backend para processamento de dados com tarefas async.',
+        'projects.card4.description': 'Backend de processamento com filas de tarefas async, jobs agendados e geração de relatórios PDF.',
+        'projects.card5.title': 'API Gerenciador de Tarefas',
+        'projects.card5.excerpt': 'Backend de gestão de tarefas com API REST e colaboração.',
+        'projects.card5.description': 'Backend de gerenciamento de projetos com CRUD completo, permissões de usuário e sistema de notificações.',
+        'projects.githubCta': 'Ver mais no GitHub',
+        
+        // Skills
+        'skills.tag': 'Tecnologias',
+        'skills.title': 'Stack & Ferramentas',
+        'skills.description': 'Tecnologias que trabalho diariamente',
+        'skills.backend': 'Backend',
+        'skills.frontend': 'Frontend',
+        'skills.database': 'Banco de Dados',
+        'skills.devops': 'DevOps & Ferramentas',
+        
+        // Contact
+        'contact.tag': 'Contato',
+        'contact.title': 'Vamos construir algo<br><span class="gradient-text">incrível juntos?</span>',
+        'contact.description': 'Estou sempre aberto a discutir novos projetos, oportunidades criativas ou maneiras de fazer parte das suas visões. Vamos conversar!',
+        'contact.code.from': '"Você"',
+        'contact.code.subject': '"Projeto Incrível"',
+        
+        // Footer
+        'footer.tagline': 'Transformando ideias em código de qualidade',
+        'footer.navigation': 'Navegação',
+        'footer.social': 'Social',
+        'footer.copyright': '© 2026 Ezequiel Lima. Feito com <span class="heart">♥</span> e muito café.',
+        'footer.tech': 'Desenvolvido com JavaScript puro'
+    }
+};
+
+// ==================== LANGUAGE SWITCHER ====================
+class LanguageSwitcher {
+    constructor() {
+        this.currentLang = localStorage.getItem('preferredLanguage') || 'en';
+        this.button = document.getElementById('langSwitch');
+        this.flagElement = document.getElementById('langFlag');
+        this.codeElement = document.getElementById('langCode');
+        
+        if (!this.button) return;
+        this.init();
+    }
+    
+    init() {
+        // Apply saved language on load
+        this.applyLanguage(this.currentLang);
+        this.updateButton();
+        
+        // Button click handler
+        this.button.addEventListener('click', () => this.toggleLanguage());
+    }
+    
+    toggleLanguage() {
+        this.currentLang = this.currentLang === 'en' ? 'pt-BR' : 'en';
+        localStorage.setItem('preferredLanguage', this.currentLang);
+        this.applyLanguage(this.currentLang);
+        this.updateButton();
+    }
+    
+    updateButton() {
+        if (this.currentLang === 'en') {
+            this.flagElement.textContent = '🇺🇸';
+            this.codeElement.textContent = 'EN';
+            this.button.setAttribute('aria-label', 'Switch to Portuguese');
+            this.button.setAttribute('title', 'Switch to Portuguese');
+        } else {
+            this.flagElement.textContent = '🇧🇷';
+            this.codeElement.textContent = 'PT';
+            this.button.setAttribute('aria-label', 'Mudar para Inglês');
+            this.button.setAttribute('title', 'Mudar para Inglês');
+        }
+    }
+    
+    applyLanguage(lang) {
+        document.documentElement.lang = lang;
+        
+        const elements = document.querySelectorAll('[data-i18n]');
+        elements.forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            const translation = translations[lang][key];
+            
+            if (translation) {
+                // Check if element has child elements that need to be preserved
+                if (el.querySelector('.highlight') || el.querySelector('.gradient-text') || el.querySelector('.heart')) {
+                    el.innerHTML = translation;
+                } else {
+                    el.innerHTML = translation;
+                }
+            }
+        });
+    }
+}
+
 // ==================== UTILITY FUNCTIONS ====================
 const Utils = {
     // Debounce function
@@ -827,6 +1099,9 @@ class App {
     }
 
     initComponents() {
+        // Language switcher (initialize first)
+        new LanguageSwitcher();
+        
         // Core components
         new Preloader();
         new CustomCursor();
@@ -865,6 +1140,7 @@ if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
         App,
         Utils,
+        LanguageSwitcher,
         Preloader,
         CustomCursor,
         NavbarController,

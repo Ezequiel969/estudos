@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Backend Python Developer transitioning to Full-Stack. Building scalable systems and clean APIs.">
+    <meta name="keywords" content="Python Developer, Backend Engineer, Full-Stack Developer, API Development, Django, FastAPI">
+    <meta name="author" content="Ezequiel Lima">
+    <meta name="theme-color" content="#0a0f1a">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ezequiel Lima | Backend Developer">
+    <meta property="og:description" content="Python Developer specializing in scalable backend systems and clean API architecture.">
+    <meta property="og:type" content="website">
+    
+    <title>Ezequiel Lima | Backend Developer</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#" class="header__logo">
+                <span class="logo__text">EL</span>
+            </a>
+            
+            <nav class="header__nav" id="nav" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#skills" class="nav__link">Skills</a></li>
+                    <li><a href="#projects" class="nav__link">Projects</a></li>
+                    <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <button class="header__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="toggle__bar"></span>
+                <span class="toggle__bar"></span>
+                <span class="toggle__bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- ==================== HERO ==================== -->
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <p class="hero__greeting" data-reveal>Hello, I'm</p>
+                    <h1 class="hero__title" data-reveal data-delay="100">
+                        Ezequiel Lima
+                    </h1>
+                    <p class="hero__subtitle" data-reveal data-delay="200">
+                        <span class="text--accent">Backend Developer</span> focused on Python
+                    </p>
+                    <p class="hero__description" data-reveal data-delay="300">
+                        I build scalable systems, clean APIs, and reliable backend infrastructure. 
+                        Currently expanding into full-stack development.
+                    </p>
+                    <div class="hero__actions" data-reveal data-delay="400">
+                        <a href="#projects" class="btn btn--primary">View My Work</a>
+                        <a href="#contact" class="btn btn--outline">Get In Touch</a>
+                    </div>
+                </div>
+                
+                <div class="hero__visual" data-reveal data-delay="300">
+                    <div class="hero__code">
+                        <div class="code__header">
+                            <span class="code__dot"></span>
+                            <span class="code__dot"></span>
+                            <span class="code__dot"></span>
+                            <span class="code__filename">developer.py</span>
+                        </div>
+                        <pre class="code__content"><code><span class="code__keyword">class</span> <span class="code__class">Developer</span>:
+    <span class="code__keyword">def</span> <span class="code__function">__init__</span>(<span class="code__param">self</span>):
+        <span class="code__param">self</span>.name = <span class="code__string">"Ezequiel Lima"</span>
+        <span class="code__param">self</span>.role = <span class="code__string">"Backend Developer"</span>
+        <span class="code__param">self</span>.stack = [<span class="code__string">"Python"</span>, <span class="code__string">"FastAPI"</span>, <span class="code__string">"PostgreSQL"</span>]
+        <span class="code__param">self</span>.learning = <span class="code__string">"Full-Stack"</span>
+
+    <span class="code__keyword">def</span> <span class="code__function">build</span>(<span class="code__param">self</span>, project):
+        <span class="code__keyword">return</span> <span class="code__string">f"Building </span>{project}<span class="code__string"> with clean code"</span></code></pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero__scroll" data-reveal data-delay="500">
+                <span class="scroll__text">Scroll to explore</span>
+                <div class="scroll__indicator"></div>
+            </div>
+        </section>
+
+        <!-- ==================== ABOUT ==================== -->
+        <section class="section about" id="about">
+            <div class="container">
+                <header class="section__header" data-reveal>
+                    <span class="section__label">About Me</span>
+                    <h2 class="section__title">Building reliable systems<br>with clean architecture</h2>
+                </header>
+                
+                <div class="about__grid">
+                    <div class="about__content" data-reveal>
+                        <p class="about__text">
+                            I'm a <strong>backend-focused Python developer</strong> with a passion for building 
+                            systems that scale. My journey started with automating tasks and quickly evolved 
+                            into designing APIs and database architectures.
+                        </p>
+                        <p class="about__text">
+                            Currently, I'm expanding my skillset into <strong>full-stack development</strong>, 
+                            learning modern frontend technologies while maintaining my focus on solid backend foundations.
+                        </p>
+                        <p class="about__text">
+                            I believe in <strong>clean code</strong>, <strong>proper testing</strong>, and 
+                            <strong>documentation</strong>. Every system I build is designed with maintainability 
+                            and scalability in mind.
+                        </p>
+                        
+                        <div class="about__highlights">
+                            <div class="highlight">
+                                <span class="highlight__number">2+</span>
+                                <span class="highlight__label">Years Learning</span>
+                            </div>
+                            <div class="highlight">
+                                <span class="highlight__number">10+</span>
+                                <span class="highlight__label">Projects Built</span>
+                            </div>
+                            <div class="highlight">
+                                <span class="highlight__number">5+</span>
+                                <span class="highlight__label">Technologies</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about__focus" data-reveal data-delay="100">
+                        <h3 class="about__focus-title">Current Focus</h3>
+                        <ul class="focus__list">
+                            <li class="focus__item">
+                                <span class="focus__icon">◆</span>
+                                <div>
+                                    <strong>Backend Architecture</strong>
+                                    <p>Designing scalable APIs with FastAPI and Django</p>
+                                </div>
+                            </li>
+                            <li class="focus__item">
+                                <span class="focus__icon">◆</span>
+                                <div>
+                                    <strong>Database Design</strong>
+                                    <p>PostgreSQL optimization and data modeling</p>
+                                </div>
+                            </li>
+                            <li class="focus__item">
+                                <span class="focus__icon">◆</span>
+                                <div>
+                                    <strong>Full-Stack Transition</strong>
+                                    <p>Learning React and modern frontend practices</p>
+                                </div>
+                            </li>
+                            <li class="focus__item">
+                                <span class="focus__icon">◆</span>
+                                <div>
+                                    <strong>DevOps Fundamentals</strong>
+                                    <p>Docker, CI/CD, and deployment automation</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SKILLS ==================== -->
+        <section class="section skills" id="skills">
+            <div class="container">
+                <header class="section__header section__header--center" data-reveal>
+                    <span class="section__label">Technical Skills</span>
+                    <h2 class="section__title">Technologies I work with</h2>
+                    <p class="section__description">
+                        Focused on Python ecosystem with expanding frontend capabilities
+                    </p>
+                </header>
+                
+                <div class="skills__grid">
+                    <!-- Backend -->
+                    <div class="skills__category" data-reveal>
+                        <h3 class="category__title">
+                            <span class="category__icon">⚙️</span>
+                            Backend
+                        </h3>
+                        <ul class="category__list">
+                            <li class="skill">
+                                <span class="skill__name">Python</span>
+                                <span class="skill__level skill__level--expert">Expert</span>
+                            </li>
+                            <li class="skill">
+                                <span class="skill__name">FastAPI</span>
+                                <span class="skill__level skill__level--advanced">Advanced</span>
+                            </li>
+                            <li class="skill">
+                                <span class="skill__name">Django</span>
+                                <span class="skill__level skill__level--advanced">Advanced</span>
+                            </li>
+                            <li class="skill">
+                                <span class="skill__name">Flask</span>
+                                <span class="skill__level skill__level--intermediate">Intermediate</span>
+                            </li>
+                            <li class="skill">
+                                <span class="skill__name">REST APIs</span>
+                                <span class="skill__level skill__level--advanced">Advanced</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Database -->
+                    <div class="skills__category" data-reveal data-delay="100">
+                        <h3 class="category__title">
+                            <span class="category__icon">🗄️</span>
+                            Database
+                        </h3>
+                        <ul class="category__list">
+                            <li class="skill">
+                                <span class="skill__name">PostgreSQL</span>
+                                <span class="skill__level skill__level--advanced">Advanced</span>
+                            </li>
+                            <li class="skill">
+                                <span class="skill__name">MySQL</span>
+                                <span class="skill__level skill__level--intermediate">Intermediate</span>
+                            </li>
+                            <li class="skill">
+                                <span class="skill__name">MongoDB</span>
+                                <span class="skill__level skill__level--intermediate">Intermediate</span>
+                            </li>
+                            <li class="skill">
+                                <span class="skill__name">Redis</span>
+                                <span class="skill__level skill__level--learning">Learning</span>
+                            </li>
+                            <li class="skill">
+                                <span class="skill__name">SQLAlchemy</span>
+                                <span class="skill__level skill__level--advanced">Advanced</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Frontend -->
+                    <div class="skills__category" data-reveal data-delay="200">
+                        <h3 class="category__title">
+                            <span class="category__icon">🎨</span>
+                            Frontend
+                        </h3>
+                        <ul class="category__list">
+                            <li class="skill">
+                                <span class="skill__name">HTML/CSS</span>
+                                <span class="skill__level skill__level--intermediate">Intermediate</span>
+                            </li>
+                            <li class="skill">
+                                <span class="skill__name">JavaScript</span>
+                                <span class="skill__level skill__level--intermediate">Intermediate</span>
+                            </li>
+                            <li class="skill">
+                                <span class="skill__name">React</span>
+                                <span class="skill__level skill__level--learning">Learning</span>
+                            </li>
+                            <li class="skill">
+                                <span class="skill__name">TypeScript</span>
+                                <span class="skill__level skill__level--learning">Learning</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Tools -->
+                    <div class="skills__category" data-reveal data-delay="300">
+                        <h3 class="category__title">
+                            <span class="category__icon">🛠️</span>
+                            Tools & DevOps
+                        </h3>
+                        <ul class="category__list">
+                            <li class="skill">
+                                <span class="skill__name">Git</span>
+                                <span class="skill__level skill__level--advanced">Advanced</span>
+                            </li>
+                            <li class="skill">
+                                <span class="skill__name">Docker</span>
+                                <span class="skill__level skill__level--intermediate">Intermediate</span>
+                            </li>
+                            <li class="skill">
+                                <span class="skill__name">Linux</span>
+                                <span class="skill__level skill__level--intermediate">Intermediate</span>
+                            </li>
+                            <li class="skill">
+                                <span class="skill__name">CI/CD</span>
+                                <span class="skill__level skill__level--learning">Learning</span>
+                            </li>
+                            <li class="skill">
+                                <span class="skill__name">Testing</span>
+                                <span class="skill__level skill__level--advanced">Advanced</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROJECTS ==================== -->
+        <section class="section projects" id="projects">
+            <div class="container">
+                <header class="section__header" data-reveal>
+                    <span class="section__label">Featured Work</span>
+                    <h2 class="section__title">Projects I've built</h2>
+                    <p class="section__description">
+                        A selection of projects showcasing my backend expertise and growing full-stack capabilities
+                    </p>
+                </header>
+                
+                <div class="projects__grid">
+                    <!-- Project 1 -->
+                    <article class="project" data-reveal>
+                        <div class="project__header">
+                            <span class="project__type">Backend API</span>
+                            <div class="project__links">
+                                <a href="#" class="project__link" aria-label="View GitHub repository">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project__link" aria-label="View live demo">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project__title">E-commerce REST API</h3>
+                        <p class="project__description">
+                            Complete e-commerce backend with authentication, product management, 
+                            shopping cart, and order processing. Built with FastAPI and PostgreSQL.
+                        </p>
+                        <ul class="project__tags">
+                            <li class="tag">Python</li>
+                            <li class="tag">FastAPI</li>
+                            <li class="tag">PostgreSQL</li>
+                            <li class="tag">JWT</li>
+                            <li class="tag">Docker</li>
+                        </ul>
+                    </article>
+                    
+                    <!-- Project 2 -->
+                    <article class="project" data-reveal data-delay="100">
+                        <div class="project__header">
+                            <span class="project__type">Full-Stack</span>
+                            <div class="project__links">
+                                <a href="#" class="project__link" aria-label="View GitHub repository">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project__link" aria-label="View live demo">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project__title">Task Management System</h3>
+                        <p class="project__description">
+                            A Kanban-style task manager with real-time updates, user collaboration, 
+                            and project organization. Django backend with REST API.
+                        </p>
+                        <ul class="project__tags">
+                            <li class="tag">Python</li>
+                            <li class="tag">Django</li>
+                            <li class="tag">DRF</li>
+                            <li class="tag">PostgreSQL</li>
+                            <li class="tag">WebSocket</li>
+                        </ul>
+                    </article>
+                    
+                    <!-- Project 3 -->
+                    <article class="project" data-reveal data-delay="200">
+                        <div class="project__header">
+                            <span class="project__type">Backend Service</span>
+                            <div class="project__links">
+                                <a href="#" class="project__link" aria-label="View GitHub repository">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project__title">Authentication Microservice</h3>
+                        <p class="project__description">
+                            Standalone auth service with OAuth2, JWT tokens, role-based access control, 
+                            and audit logging. Designed for microservices architecture.
+                        </p>
+                        <ul class="project__tags">
+                            <li class="tag">Python</li>
+                            <li class="tag">FastAPI</li>
+                            <li class="tag">OAuth2</li>
+                            <li class="tag">Redis</li>
+                            <li class="tag">Docker</li>
+                        </ul>
+                    </article>
+                    
+                    <!-- Project 4 -->
+                    <article class="project" data-reveal data-delay="300">
+                        <div class="project__header">
+                            <span class="project__type">Data Pipeline</span>
+                            <div class="project__links">
+                                <a href="#" class="project__link" aria-label="View GitHub repository">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project__title">ETL Data Pipeline</h3>
+                        <p class="project__description">
+                            Automated data extraction and transformation pipeline for analytics. 
+                            Handles multiple data sources with scheduling and error recovery.
+                        </p>
+                        <ul class="project__tags">
+                            <li class="tag">Python</li>
+                            <li class="tag">Pandas</li>
+                            <li class="tag">PostgreSQL</li>
+                            <li class="tag">Celery</li>
+                            <li class="tag">AWS S3</li>
+                        </ul>
+                    </article>
+                </div>
+                
+                <div class="projects__more" data-reveal>
+                    <a href="https://github.com/ezequiellima" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+                        View All Projects on GitHub
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACT ==================== -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="contact__grid">
+                    <div class="contact__content" data-reveal>
+                        <header class="section__header">
+                            <span class="section__label">Get In Touch</span>
+                            <h2 class="section__title">Let's work together</h2>
+                        </header>
+                        <p class="contact__text">
+                            I'm currently open to new opportunities and interesting projects. 
+                            Whether you have a question, a project idea, or just want to connect — 
+                            feel free to reach out.
+                        </p>
+                        <div class="contact__info">
+                            <a href="mailto:ezequiel.lima@email.com" class="contact__link">
+                                <span class="contact__icon">📧</span>
+                                <span>ezequiel.lima@email.com</span>
+                            </a>
+                            <a href="https://linkedin.com/in/ezequiellima" target="_blank" rel="noopener noreferrer" class="contact__link">
+                                <span class="contact__icon">💼</span>
+                                <span>linkedin.com/in/ezequiellima</span>
+                            </a>
+                            <a href="https://github.com/ezequiellima" target="_blank" rel="noopener noreferrer" class="contact__link">
+                                <span class="contact__icon">🔗</span>
+                                <span>github.com/ezequiellima</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__cta" data-reveal data-delay="100">
+                        <div class="cta__card">
+                            <h3 class="cta__title">Ready to start a project?</h3>
+                            <p class="cta__text">
+                                I'm always interested in hearing about new projects and opportunities.
+                            </p>
+                            <a href="mailto:ezequiel.lima@email.com" class="btn btn--primary btn--large">
+                                Send me an email
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <p class="footer__text">
+                Built with clean code and attention to detail.
+            </p>
+            <p class="footer__copyright">
+                © 2026 Ezequiel Lima. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/modules/animations.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
