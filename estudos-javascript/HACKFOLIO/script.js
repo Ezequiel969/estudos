@@ -97,7 +97,22 @@ const translations = {
             '> API Architect',
             '> Problem Solver',
             '> Code Craftsman'
-        ]
+        ],
+        
+        // Navigation
+        'nav.status': 'SYSTEM ONLINE',
+        'nav.about': 'about()',
+        'nav.skills': 'skills()',
+        'nav.projects': 'projects()',
+        'nav.experience': 'experience()',
+        'nav.contact': 'contact()',
+        
+        // Boot Sequence
+        'boot.line1': '[SYS] ░▒▓ BREACHING MAINFRAME ▓▒░',
+        'boot.line2': '[OK] Injecting payload modules...',
+        'boot.line3': '[OK] Bypassing firewall protocols...',
+        'boot.line4': '[OK] Extracting classified data...',
+        'boot.line5': '[ROOT] ◉ ACCESS GRANTED ◉ Welcome, Operator.'
     },
     'pt-BR': {
         // Hero
@@ -189,7 +204,22 @@ const translations = {
             '> Arquiteto de APIs',
             '> Solucionador de Problemas',
             '> Artesão de Código'
-        ]
+        ],
+        
+        // Navigation
+        'nav.status': 'SISTEMA ONLINE',
+        'nav.about': 'sobre()',
+        'nav.skills': 'habilidades()',
+        'nav.projects': 'projetos()',
+        'nav.experience': 'experiencia()',
+        'nav.contact': 'contato()',
+        
+        // Boot Sequence
+        'boot.line1': '[SYS] ░▒▓ INVADINDO MAINFRAME ▓▒░',
+        'boot.line2': '[OK] Injetando módulos de payload...',
+        'boot.line3': '[OK] Burlando protocolos de firewall...',
+        'boot.line4': '[OK] Extraindo dados classificados...',
+        'boot.line5': '[ROOT] ◉ ACESSO CONCEDIDO ◉ Bem-vindo, Operador.'
     }
 };
 
