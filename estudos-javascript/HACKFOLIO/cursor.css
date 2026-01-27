@@ -1,0 +1,103 @@
+:root {
+    --cursor-primary: #00ff41;
+    --cursor-accent: #00e0d1;
+}
+
+body,
+a,
+button,
+input,
+textarea,
+select,
+label {
+    cursor: none;
+}
+
+.cyber-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    pointer-events: none;
+    z-index: 12000;
+    mix-blend-mode: screen;
+    opacity: 0;
+    transition: opacity 0.22s ease;
+    will-change: transform, opacity;
+}
+
+.cyber-cursor.visible {
+    opacity: 1;
+}
+
+.cursor-ring {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid var(--cursor-primary);
+    box-shadow: 0 0 12px rgba(0, 255, 65, 0.6), 0 0 22px rgba(0, 255, 65, 0.35);
+    filter: drop-shadow(0 0 6px rgba(0, 255, 65, 0.4));
+    transition: transform 0.12s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    animation: cursorPulse 2s ease-in-out infinite;
+}
+
+.cursor-core {
+    position: absolute;
+    inset: 50%;
+    width: 8px;
+    height: 8px;
+    margin-left: -4px;
+    margin-top: -4px;
+    border-radius: 50%;
+    background: var(--cursor-primary);
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
+    transition: transform 0.12s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cursor-trail-dot {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--cursor-primary);
+    pointer-events: none;
+    mix-blend-mode: screen;
+    opacity: 0;
+    z-index: 11999;
+    transition: opacity 0.2s ease;
+    filter: drop-shadow(0 0 8px rgba(0, 255, 65, 0.6));
+    will-change: transform, opacity;
+}
+
+.cursor-trail-dot.visible {
+    opacity: 0.55;
+}
+
+.cyber-cursor.active .cursor-ring {
+    transform: scale(0.82);
+}
+
+.cyber-cursor.active .cursor-core {
+    transform: scale(0.7);
+}
+
+.cyber-cursor.interactive .cursor-ring {
+    border-color: var(--cursor-accent);
+    box-shadow: 0 0 12px rgba(0, 224, 209, 0.7), 0 0 22px rgba(0, 224, 209, 0.4);
+}
+
+.cyber-cursor.interactive .cursor-core {
+    background: var(--cursor-accent);
+    box-shadow: 0 0 10px rgba(0, 224, 209, 0.8);
+}
+
+@keyframes cursorPulse {
+    0% { transform: scale(1); opacity: 0.95; }
+    50% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.95; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cursor-ring { animation: none; }
+}

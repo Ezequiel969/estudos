@@ -4,14 +4,22 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> badb0125dcb9761153ff3ac1e4b750ae97c2b031
         {
             "name": "Python Debugger: Current File",
             "type": "debugpy",
             "request": "launch",
             "program": "${file}",
+<<<<<<< HEAD
             "console": "integratedTerminal",
             "justMyCode": true
+=======
+            "console": "integratedTerminal"
+>>>>>>> badb0125dcb9761153ff3ac1e4b750ae97c2b031
         }
     ]
 }

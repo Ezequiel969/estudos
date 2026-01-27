@@ -1,14 +1,6 @@
-/**
- * =====================================================
- * HACKFOLIO - HACKER-THEMED PORTFOLIO
- * Advanced JavaScript Effects & Interactions
- * =====================================================
- */
-
-// ==================== TRANSLATIONS ====================
 const translations = {
     en: {
-        // Hero
+
         'hero.greeting': '// HELLO WORLD',
         'hero.description': '<span class="desc-bracket">&lt;</span>I build <span class="highlight">scalable systems</span>, design <span class="highlight">secure APIs</span>, and architect <span class="highlight">robust backends</span>. Currently infiltrating the <span class="highlight">full-stack</span> domain.<span class="desc-bracket">/&gt;</span>',
         'hero.cta.projects': 'VIEW_PROJECTS',
@@ -22,8 +14,7 @@ const translations = {
         'hero.data.country': 'BRAZIL',
         'hero.data.availability': 'AVAILABILITY:',
         'hero.data.open': 'OPEN FOR WORK',
-        
-        // About
+
         'about.title': 'ABOUT',
         'about.title2': '_ME',
         'about.p1': '<span class="highlight-bracket">[</span> I\'m a <strong class="neon-text">backend-focused Python developer</strong> with an obsession for building systems that don\'t just work—they <em>scale</em>. <span class="highlight-bracket">]</span>',
@@ -37,12 +28,10 @@ const translations = {
         'about.features.performance.desc': 'Optimized code, caching strategies, and systems built for high traffic.',
         'about.features.security.title': 'Security First',
         'about.features.security.desc': 'Authentication, encryption, and secure coding practices as standard.',
-        
-        // Skills
+
         'skills.title': 'TECH',
         'skills.title2': '_STACK',
-        
-        // Projects
+
         'projects.title': 'MY',
         'projects.title2': '_WORK',
         'projects.featured.label': '// FEATURED PROJECT',
@@ -51,8 +40,7 @@ const translations = {
         'projects.view.code': 'VIEW_CODE',
         'projects.view.demo': 'LIVE_DEMO',
         'projects.github': 'VIEW_ALL_ON_GITHUB',
-        
-        // Experience
+
         'experience.title': 'MY',
         'experience.title2': '_JOURNEY',
         'experience.item1.date': '2024 - PRESENT',
@@ -67,8 +55,7 @@ const translations = {
         'experience.item3.title': 'Beginning of the Journey',
         'experience.item3.company': 'First Projects',
         'experience.item3.desc': 'Started coding journey with Python fundamentals, version control with Git, and building first personal automation projects. The beginning of an obsession.',
-        
-        // Contact
+
         'contact.title': 'GET_IN',
         'contact.title2': '_TOUCH',
         'contact.channels': '// DIRECT_CHANNELS',
@@ -81,16 +68,14 @@ const translations = {
         'contact.form.send': './send_message.sh',
         'contact.form.sending': 'SENDING...',
         'contact.form.success': '[SUCCESS] Message sent successfully! I\'ll get back to you soon.',
-        
-        // Footer
+
         'footer.tagline': '// Building the future, one commit at a time.',
         'footer.nav': 'NAVIGATION',
         'footer.connect': 'CONNECT',
         'footer.copyright': '© 2026 EZEQUIEL_LIMA.exe',
         'footer.made': 'Built with',
         'footer.tech': 'Pure JavaScript + CSS Magic',
-        
-        // Typewriter titles
+
         'typewriter': [
             '> Backend Developer',
             '> Python Enthusiast',
@@ -115,7 +100,7 @@ const translations = {
         'boot.line5': '[ROOT] ◉ ACCESS GRANTED ◉ Welcome, Operator.'
     },
     'pt-BR': {
-        // Hero
+
         'hero.greeting': '// OLÁ MUNDO',
         'hero.description': '<span class="desc-bracket">&lt;</span>Construo <span class="highlight">sistemas escaláveis</span>, projeto <span class="highlight">APIs seguras</span> e arquiteto <span class="highlight">backends robustos</span>. Atualmente infiltrando o domínio <span class="highlight">full-stack</span>.<span class="desc-bracket">/&gt;</span>',
         'hero.cta.projects': 'VER_PROJETOS',
@@ -129,8 +114,7 @@ const translations = {
         'hero.data.country': 'BRASIL',
         'hero.data.availability': 'DISPONIBILIDADE:',
         'hero.data.open': 'DISPONÍVEL',
-        
-        // About
+
         'about.title': 'SOBRE',
         'about.title2': '_MIM',
         'about.p1': '<span class="highlight-bracket">[</span> Sou um <strong class="neon-text">desenvolvedor Python focado em backend</strong> com obsessão por construir sistemas que não apenas funcionam—eles <em>escalam</em>. <span class="highlight-bracket">]</span>',
@@ -144,12 +128,10 @@ const translations = {
         'about.features.performance.desc': 'Código otimizado, estratégias de cache e sistemas construídos para alto tráfego.',
         'about.features.security.title': 'Segurança Primeiro',
         'about.features.security.desc': 'Autenticação, criptografia e práticas de código seguro como padrão.',
-        
-        // Skills
+
         'skills.title': 'TECH',
         'skills.title2': '_STACK',
-        
-        // Projects
+
         'projects.title': 'MEU',
         'projects.title2': '_TRABALHO',
         'projects.featured.label': '// PROJETO DESTAQUE',
@@ -158,8 +140,7 @@ const translations = {
         'projects.view.code': 'VER_CÓDIGO',
         'projects.view.demo': 'DEMO_LIVE',
         'projects.github': 'VER_TODOS_NO_GITHUB',
-        
-        // Experience
+
         'experience.title': 'MINHA',
         'experience.title2': '_JORNADA',
         'experience.item1.date': '2024 - PRESENTE',
@@ -174,8 +155,7 @@ const translations = {
         'experience.item3.title': 'Início da Jornada',
         'experience.item3.company': 'Primeiros Projetos',
         'experience.item3.desc': 'Comecei a jornada de programação com fundamentos Python, controle de versão com Git e construção dos primeiros projetos pessoais de automação. O início de uma obsessão.',
-        
-        // Contact
+
         'contact.title': 'ENTRE_EM',
         'contact.title2': '_CONTATO',
         'contact.channels': '// CANAIS_DIRETOS',
@@ -188,16 +168,14 @@ const translations = {
         'contact.form.send': './enviar_mensagem.sh',
         'contact.form.sending': 'ENVIANDO...',
         'contact.form.success': '[SUCESSO] Mensagem enviada com sucesso! Retornarei em breve.',
-        
-        // Footer
+
         'footer.tagline': '// Construindo o futuro, um commit por vez.',
         'footer.nav': 'NAVEGAÇÃO',
         'footer.connect': 'CONECTAR',
         'footer.copyright': '© 2026 EZEQUIEL_LIMA.exe',
         'footer.made': 'Feito com',
         'footer.tech': 'JavaScript Puro + Magia CSS',
-        
-        // Typewriter titles
+
         'typewriter': [
             '> Desenvolvedor Backend',
             '> Entusiasta Python',
@@ -223,7 +201,6 @@ const translations = {
     }
 };
 
-// ==================== LANGUAGE MANAGER ====================
 class LanguageManager {
     constructor() {
         this.currentLang = localStorage.getItem('hackfolio-lang') || 'en';
@@ -240,8 +217,7 @@ class LanguageManager {
         if (this.langToggle) {
             this.langToggle.addEventListener('click', () => this.toggle());
         }
-        
-        // Apply translations if page is already loaded
+
         if (document.readyState === 'complete') {
             this.applyTranslations();
         }
@@ -252,8 +228,7 @@ class LanguageManager {
         localStorage.setItem('hackfolio-lang', this.currentLang);
         this.updateUI();
         this.applyTranslations();
-        
-        // Update typewriter
+
         if (window.typewriterInstance) {
             window.typewriterInstance.updateTexts(translations[this.currentLang]['typewriter']);
         }
@@ -279,8 +254,7 @@ class LanguageManager {
             const key = el.getAttribute('data-i18n');
             if (t[key]) {
                 el.innerHTML = t[key];
-                
-                // Update data-text for glitch effects
+
                 if (el.hasAttribute('data-text')) {
                     el.setAttribute('data-text', t[key].replace(/<[^>]*>/g, ''));
                 }
@@ -293,7 +267,6 @@ class LanguageManager {
     }
 }
 
-// ==================== CONFIGURATION ====================
 const CONFIG = {
     matrix: {
         fontSize: 14,
@@ -316,7 +289,6 @@ const CONFIG = {
     }
 };
 
-// ==================== BOOT SEQUENCE ====================
 class BootSequence {
     constructor() {
         this.bootSequence = document.getElementById('bootSequence');
@@ -345,8 +317,7 @@ class BootSequence {
             progress += 1;
             this.progressBar.style.width = `${progress}%`;
             this.percentage.textContent = `${progress}%`;
-            
-            // Show boot lines at certain percentages
+
             if (progress === 15 && lineIndex < 5) {
                 this.showLine(lineIndex++);
             }
@@ -382,15 +353,13 @@ class BootSequence {
     complete() {
         this.bootSequence.classList.add('hidden');
         document.body.style.overflow = 'auto';
-        
-        // Initialize all effects after boot
+
         setTimeout(() => {
             window.app.init();
         }, 300);
     }
 }
 
-// ==================== MATRIX RAIN ====================
 class MatrixRain {
     constructor(canvas) {
         this.canvas = canvas;
@@ -415,7 +384,7 @@ class MatrixRain {
     }
     
     draw() {
-        // Semi-transparent black for trail effect
+
         this.ctx.fillStyle = 'rgba(10, 10, 15, 0.05)';
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
         
@@ -425,23 +394,19 @@ class MatrixRain {
         this.columns.forEach((column, i) => {
             const char = this.chars[Math.floor(Math.random() * this.chars.length)];
             const x = i * this.fontSize;
-            
-            // Main character (brightest)
+
             this.ctx.fillStyle = '#00ff41';
             this.ctx.fillText(char, x, column.y);
-            
-            // Slightly dimmer character above
+
             this.ctx.fillStyle = 'rgba(0, 255, 65, 0.5)';
             this.ctx.fillText(
                 this.chars[Math.floor(Math.random() * this.chars.length)],
                 x,
                 column.y - this.fontSize
             );
-            
-            // Move column down
+
             column.y += this.fontSize * column.speed;
-            
-            // Reset column if it goes off screen
+
             if (column.y > this.canvas.height && Math.random() > 0.975) {
                 column.y = 0;
                 column.speed = Math.random() * 0.5 + 0.5;
@@ -458,7 +423,6 @@ class MatrixRain {
     }
 }
 
-// ==================== TYPEWRITER EFFECT ====================
 class TypeWriter {
     constructor(element, texts, options = {}) {
         this.element = element;
@@ -507,7 +471,6 @@ class TypeWriter {
     }
 }
 
-// ==================== TERMINAL TYPING ====================
 class TerminalTyping {
     constructor() {
         this.commandElement = document.getElementById('heroCommand');
@@ -539,7 +502,6 @@ class TerminalTyping {
     }
 }
 
-// ==================== COUNTER ANIMATION ====================
 class CounterAnimation {
     constructor() {
         this.counters = document.querySelectorAll('.counter');
@@ -569,8 +531,7 @@ class CounterAnimation {
         const animate = (currentTime) => {
             const elapsed = currentTime - start;
             const progress = Math.min(elapsed / duration, 1);
-            
-            // Easing function
+
             const easeOutQuart = 1 - Math.pow(1 - progress, 4);
             const current = Math.floor(easeOutQuart * target);
             
@@ -585,7 +546,6 @@ class CounterAnimation {
     }
 }
 
-// ==================== SKILL BARS ====================
 class SkillBars {
     constructor() {
         this.skillBars = document.querySelectorAll('.skill-progress');
@@ -615,7 +575,6 @@ class SkillBars {
     }
 }
 
-// ==================== NAVIGATION ====================
 class Navigation {
     constructor() {
         this.nav = document.getElementById('cyberNav');
@@ -627,18 +586,15 @@ class Navigation {
     }
     
     init() {
-        // Scroll effect
+
         window.addEventListener('scroll', () => this.handleScroll());
-        
-        // Mobile toggle
+
         this.toggle.addEventListener('click', () => this.toggleMenu());
-        
-        // Smooth scroll
+
         this.navItems.forEach(item => {
             item.addEventListener('click', (e) => this.smoothScroll(e));
         });
-        
-        // Close menu on link click
+
         this.navItems.forEach(item => {
             item.addEventListener('click', () => {
                 this.links.classList.remove('active');
@@ -676,7 +632,6 @@ class Navigation {
     }
 }
 
-// ==================== GLITCH TEXT ====================
 class GlitchText {
     constructor() {
         this.glitchElements = document.querySelectorAll('.glitch-text');
@@ -716,7 +671,6 @@ class GlitchText {
     }
 }
 
-// ==================== CURSOR TRAIL ====================
 class CursorTrail {
     constructor() {
         this.trail = document.getElementById('cursorTrail');
@@ -741,7 +695,6 @@ class CursorTrail {
     }
 }
 
-// ==================== PARTICLES ====================
 class Particles {
     constructor(container) {
         this.container = container;
@@ -777,7 +730,6 @@ class Particles {
     }
 }
 
-// ==================== SCROLL ANIMATIONS ====================
 class ScrollAnimations {
     constructor() {
         this.elements = document.querySelectorAll('[data-aos]');
@@ -801,8 +753,7 @@ class ScrollAnimations {
             element.classList.add('aos-init');
             observer.observe(element);
         });
-        
-        // Add CSS for animations
+
         this.addStyles();
     }
     
@@ -853,7 +804,6 @@ class ScrollAnimations {
     }
 }
 
-// ==================== BACK TO TOP ====================
 class BackToTop {
     constructor() {
         this.button = document.getElementById('backToTop');
@@ -879,7 +829,6 @@ class BackToTop {
     }
 }
 
-// ==================== CONTACT FORM ====================
 class ContactForm {
     constructor() {
         this.form = document.getElementById('contactForm');
@@ -899,16 +848,14 @@ class ContactForm {
         
         const submitBtn = this.form.querySelector('.submit-btn');
         submitBtn.classList.add('loading');
-        
-        // Simulate form submission
+
         setTimeout(() => {
             submitBtn.classList.remove('loading');
             this.response.querySelector('.response-text').textContent = 
                 '[SUCCESS] Message sent successfully! I\'ll get back to you soon.';
             this.response.style.color = '#00ff41';
             this.form.reset();
-            
-            // Clear message after 5 seconds
+
             setTimeout(() => {
                 this.response.querySelector('.response-text').textContent = '';
             }, 5000);
@@ -916,7 +863,6 @@ class ContactForm {
     }
 }
 
-// ==================== KONAMI CODE EASTER EGG ====================
 class KonamiCode {
     constructor() {
         this.pattern = [
@@ -945,7 +891,7 @@ class KonamiCode {
     }
     
     activate() {
-        // Special hacker mode!
+
         document.body.style.transition = 'filter 0.5s ease';
         document.body.style.filter = 'hue-rotate(180deg)';
         
@@ -990,7 +936,6 @@ class KonamiCode {
     }
 }
 
-// ==================== RANDOM GLITCH EFFECT ====================
 class RandomGlitch {
     constructor() {
         this.glitchOverlay = document.getElementById('glitchOverlay');
@@ -1017,7 +962,6 @@ class RandomGlitch {
     }
 }
 
-// ==================== MAIN APPLICATION ====================
 class App {
     constructor() {
         this.initialized = false;
@@ -1027,65 +971,48 @@ class App {
     init() {
         if (this.initialized) return;
         this.initialized = true;
-        
-        // Initialize Language Manager first
+
         this.langManager = new LanguageManager();
-        
-        // Initialize Matrix
+
         const matrixCanvas = document.getElementById('matrixCanvas');
         if (matrixCanvas) {
             const matrix = new MatrixRain(matrixCanvas);
             matrix.start();
         }
-        
-        // Get current language for typewriter
+
         const currentLang = this.langManager.currentLang;
         const typewriterTexts = translations[currentLang]['typewriter'];
-        
-        // Initialize Typewriter
+
         const heroTitle = document.getElementById('heroTitle');
         if (heroTitle) {
             new TypeWriter(heroTitle, typewriterTexts);
         }
-        
-        // Apply translations
+
         this.langManager.applyTranslations();
-        
-        // Initialize Terminal
+
         new TerminalTyping();
-        
-        // Initialize Counter Animation
+
         new CounterAnimation();
-        
-        // Initialize Skill Bars
+
         new SkillBars();
-        
-        // Initialize Navigation
+
         new Navigation();
-        
-        // Initialize Glitch Text
+
         new GlitchText();
-        
-        // Initialize Cursor Trail
+
         new CursorTrail();
-        
-        // Initialize Particles
+
         const heroParticles = document.getElementById('heroParticles');
         new Particles(heroParticles);
-        
-        // Initialize Scroll Animations
+
         new ScrollAnimations();
-        
-        // Initialize Back to Top
+
         new BackToTop();
-        
-        // Initialize Contact Form
+
         new ContactForm();
-        
-        // Initialize Konami Code
+
         new KonamiCode();
-        
-        // Initialize Random Glitch
+
         new RandomGlitch();
         
         console.log('%c HACKFOLIO INITIALIZED ', 'background: #00ff41; color: #0a0a0f; font-weight: bold; padding: 10px;');
@@ -1093,7 +1020,6 @@ class App {
     }
 }
 
-// Add screen shake animation
 const shakeStyle = document.createElement('style');
 shakeStyle.textContent = `
     @keyframes screenShake {
@@ -1105,22 +1031,18 @@ shakeStyle.textContent = `
 `;
 document.head.appendChild(shakeStyle);
 
-// ==================== INITIALIZE ====================
 window.app = new App();
 
-// Start boot sequence
 document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = 'hidden';
     new BootSequence();
 });
 
-// Prevent right-click (hacker vibes)
 document.addEventListener('contextmenu', (e) => {
     e.preventDefault();
     console.log('%c Nice try! 😎 ', 'background: #00ff41; color: #0a0a0f; padding: 5px;');
 });
 
-// Console message
 console.log(`
 %c
 ╔═══════════════════════════════════════════════════════════╗
