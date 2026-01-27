@@ -1,13 +1,5 @@
-/**
- * =====================================================
- * HACKFOLIO - HACKER-THEMED PORTFOLIO
- * Professional Cyberpunk Portfolio Styles
- * =====================================================
- */
-
-/* ==================== CSS VARIABLES ==================== */
 :root {
-    /* Neon Colors */
+    
     --neon-green: #00ff41;
     --neon-green-dark: #00cc33;
     --neon-cyan: #00ffff;
@@ -18,48 +10,48 @@
     --neon-orange: #ff8000;
     --neon-red: #ff0040;
     
-    /* Background Colors */
+    
     --bg-primary: #0a0a0f;
     --bg-secondary: #0d0d14;
     --bg-tertiary: #12121a;
     --bg-card: rgba(13, 13, 20, 0.9);
     --bg-glass: rgba(0, 255, 65, 0.03);
     
-    /* Text Colors */
+    
     --text-primary: #e0e0e0;
     --text-secondary: #a0a0a0;
     --text-muted: #606060;
     --text-bright: #ffffff;
     
-    /* Terminal Colors */
+    
     --terminal-bg: #0c0c12;
     --terminal-border: #1a1a25;
     --terminal-header: #151520;
     
-    /* Accent */
+    
     --accent: var(--neon-green);
     --accent-secondary: var(--neon-cyan);
     
-    /* Shadows & Glows */
+    
     --glow-sm: 0 0 10px var(--neon-green);
     --glow-md: 0 0 20px var(--neon-green);
     --glow-lg: 0 0 40px var(--neon-green);
     --glow-cyan: 0 0 20px var(--neon-cyan);
     
-    /* Spacing */
+    
     --section-padding: clamp(60px, 10vh, 120px);
     --container-width: 1200px;
     
-    /* Fonts */
+    
     --font-mono: 'Fira Code', 'Share Tech Mono', monospace;
     --font-display: 'Orbitron', sans-serif;
     
-    /* Transitions */
+    
     --transition-fast: 0.15s ease;
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
     
-    /* Z-index layers */
+    
     --z-matrix: 1;
     --z-content: 10;
     --z-nav: 100;
@@ -67,7 +59,7 @@
     --z-boot: 9999;
 }
 
-/* ==================== RESET & BASE ==================== */
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -90,7 +82,7 @@ body {
     min-height: 100vh;
 }
 
-/* Custom Scrollbar */
+
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -108,13 +100,13 @@ body {
     background: var(--neon-cyan);
 }
 
-/* Selection */
+
 ::selection {
     background: var(--neon-green);
     color: var(--bg-primary);
 }
 
-/* Links */
+
 a {
     color: var(--neon-green);
     text-decoration: none;
@@ -126,19 +118,19 @@ a:hover {
     text-shadow: var(--glow-sm);
 }
 
-/* Images */
+
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-/* Lists */
+
 ul, ol {
     list-style: none;
 }
 
-/* Buttons */
+
 button {
     font-family: inherit;
     cursor: pointer;
@@ -146,7 +138,7 @@ button {
     background: none;
 }
 
-/* ==================== BOOT SEQUENCE ==================== */
+
 .boot-sequence {
     position: fixed;
     top: 0;
@@ -234,7 +226,7 @@ button {
     margin-top: 1rem;
 }
 
-/* ==================== MATRIX CANVAS ==================== */
+
 .matrix-canvas {
     position: fixed;
     top: 0;
@@ -246,7 +238,7 @@ button {
     opacity: 0.15;
 }
 
-/* ==================== SCANLINES ==================== */
+
 .scanlines {
     position: fixed;
     top: 0;
@@ -265,7 +257,7 @@ button {
     opacity: 0.3;
 }
 
-/* ==================== GLITCH OVERLAY ==================== */
+
 .glitch-overlay {
     position: fixed;
     top: 0;
@@ -288,7 +280,7 @@ button {
     100% { transform: translateY(100%); }
 }
 
-/* ==================== CURSOR TRAIL ==================== */
+
 .cursor-trail {
     position: fixed;
     width: 8px;
@@ -302,7 +294,7 @@ button {
     transition: opacity 0.2s ease;
 }
 
-/* ==================== NAVIGATION ==================== */
+
 .cyber-nav {
     position: fixed;
     top: 0;
@@ -465,7 +457,7 @@ button {
     box-shadow: var(--glow-md);
 }
 
-/* Language Toggle */
+
 .lang-toggle {
     display: flex;
     align-items: center;
@@ -496,7 +488,7 @@ button {
     letter-spacing: 1px;
 }
 
-/* ==================== HERO SECTION ==================== */
+
 .hero-section {
     min-height: 100vh;
     display: flex;
@@ -544,7 +536,7 @@ button {
     z-index: var(--z-content);
 }
 
-/* Hero Terminal */
+
 .hero-terminal {
     margin-bottom: 2rem;
 }
@@ -614,7 +606,7 @@ button {
     margin-top: 0.5rem;
 }
 
-/* Hero Intro */
+
 .hero-greeting {
     font-size: 1rem;
     color: var(--neon-cyan);
@@ -668,7 +660,7 @@ button {
     font-weight: 500;
 }
 
-/* Hero CTA */
+
 .hero-cta {
     display: flex;
     gap: 1rem;
@@ -722,7 +714,7 @@ button {
     font-size: 1rem;
 }
 
-/* Hero Stats */
+
 .hero-stats {
     display: flex;
     align-items: center;
@@ -753,7 +745,7 @@ button {
     color: var(--terminal-border);
 }
 
-/* Hero Visual */
+
 .hero-visual {
     position: relative;
     display: flex;
@@ -884,7 +876,7 @@ button {
     text-shadow: var(--glow-sm);
 }
 
-/* Floating Code Elements */
+
 .floating-elements {
     position: absolute;
     top: 0;
@@ -928,7 +920,7 @@ button {
     50% { transform: translateY(-20px) rotate(2deg); }
 }
 
-/* Scroll Indicator */
+
 .scroll-indicator {
     position: absolute;
     bottom: 2rem;
@@ -960,7 +952,7 @@ button {
     50% { transform: translateX(-50%) translateY(10px); }
 }
 
-/* ==================== SECTIONS COMMON ==================== */
+
 .section {
     position: relative;
     padding: var(--section-padding) 0;
@@ -1004,7 +996,7 @@ button {
     font-size: 1rem;
 }
 
-/* Glitch Hover Effect */
+
 .glitch-hover {
     position: relative;
 }
@@ -1022,7 +1014,7 @@ button {
     100% { transform: translate(0); }
 }
 
-/* ==================== ABOUT SECTION ==================== */
+
 .about-content {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -1092,7 +1084,7 @@ button {
     color: var(--neon-green);
 }
 
-/* About Features */
+
 .about-features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1145,7 +1137,7 @@ button {
     line-height: 1.6;
 }
 
-/* ==================== SKILLS SECTION ==================== */
+
 .skills-terminal {
     max-width: 900px;
     margin: 0 auto;
@@ -1237,7 +1229,7 @@ button {
     transition: width 1s ease;
 }
 
-/* ==================== PROJECTS SECTION ==================== */
+
 .featured-project {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -1390,7 +1382,7 @@ button {
     background: rgba(0, 255, 65, 0.1);
 }
 
-/* Project Cards Grid */
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1500,7 +1492,7 @@ button {
     text-align: center;
 }
 
-/* ==================== EXPERIENCE SECTION ==================== */
+
 .timeline {
     position: relative;
     max-width: 800px;
@@ -1614,7 +1606,7 @@ button {
     border-radius: 3px;
 }
 
-/* ==================== CONTACT SECTION ==================== */
+
 .contact-content {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -1704,7 +1696,7 @@ button {
     min-height: 1.5em;
 }
 
-/* Contact Info */
+
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -1787,7 +1779,7 @@ button {
     line-height: 1.7;
 }
 
-/* ==================== FOOTER ==================== */
+
 .cyber-footer {
     background: var(--bg-secondary);
     border-top: 1px solid var(--terminal-border);
@@ -1921,7 +1913,7 @@ button {
     font-family: var(--font-mono);
 }
 
-/* ==================== BACK TO TOP ==================== */
+
 .back-to-top {
     position: fixed;
     bottom: 2rem;
@@ -1971,13 +1963,13 @@ button {
     color: var(--bg-primary);
 }
 
-/* ==================== ANIMATIONS ==================== */
+
 @keyframes flicker {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.8; }
 }
 
-/* ==================== RESPONSIVE DESIGN ==================== */
+
 @media (max-width: 1024px) {
     .hero-container {
         grid-template-columns: 1fr;
@@ -2149,7 +2141,7 @@ button {
     }
 }
 
-/* ==================== PRINT STYLES ==================== */
+
 @media print {
     .boot-sequence,
     .matrix-canvas,

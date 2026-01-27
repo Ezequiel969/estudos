@@ -1,4 +1,21 @@
-# HACKFOLIO - Hacker-Themed Portfolio 🖥️💚
+# HACKFOLIO
+
+Hacker-themed personal portfolio built with HTML, CSS, and vanilla JavaScript. It ships with matrix rain, a brief boot intro, and animated sections for skills, projects, experience, and contact.
+
+## Highlights
+- Matrix canvas background, glitch accents, and cursor trail for the visual theme
+- Boot overlay before the main interface loads
+- Bilingual content managed through `translations` in `script.js`
+- Animated counters, typewriter titles, and skill progress bars
+- Responsive navigation with a mobile toggle
+
+## Running
+Open `index.html` in a browser. All assets are local except for the icon SVGs pulled from CDN URLs.
+
+## Customization
+- Update text in `index.html` or the `translations` object in `script.js`
+- Adjust colors and spacing via CSS variables in `style.css`
+- Replace profile and project links with your own# HACKFOLIO - Hacker-Themed Portfolio 🖥️💚
 
 ```
 ███╗   ███╗ █████╗ ████████╗██████╗ ██╗██╗  ██╗
