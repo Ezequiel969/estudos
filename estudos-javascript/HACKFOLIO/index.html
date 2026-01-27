@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ezequiel Lima - Backend Python Developer | Hacker Portfolio | Building scalable systems and secure APIs">
+    <meta name="keywords" content="backend developer, Python developer, FastAPI, Django, PostgreSQL, API development, hacker portfolio, cybersecurity">
+    <meta name="author" content="Ezequiel Lima">
+    <meta name="theme-color" content="#00ff41">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ezequiel Lima | Backend Developer">
+    <meta property="og:description" content="Backend Python Developer - Systems Architect - Building the future, one line at a time.">
+    
+    <title>EZEQUIEL_LIMA.exe | Backend Developer</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Share+Tech+Mono&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- BOOT SEQUENCE -->
+    <div class="boot-sequence" id="bootSequence">
+        <div class="boot-container">
+            <div class="boot-logo">
+                <pre class="ascii-art" id="asciiArt">
+███████╗███████╗███████╗ ██████╗ ██╗   ██╗██╗███████╗██╗     
+██╔════╝╚══███╔╝██╔════╝██╔═══██╗██║   ██║██║██╔════╝██║     
+█████╗    ███╔╝ █████╗  ██║   ██║██║   ██║██║█████╗  ██║     
+██╔══╝   ███╔╝  ██╔══╝  ██║▄▄ ██║██║   ██║██║██╔══╝  ██║     
+███████╗███████╗███████╗╚██████╔╝╚██████╔╝██║███████╗███████╗
+╚══════╝╚══════╝╚══════╝ ╚══▀▀═╝  ╚═════╝ ╚═╝╚══════╝╚══════╝
+                </pre>
+            </div>
+            <div class="boot-terminal">
+                <div class="boot-line" id="bootLine1">[SYSTEM] Initializing kernel...</div>
+                <div class="boot-line" id="bootLine2">[OK] Loading modules...</div>
+                <div class="boot-line" id="bootLine3">[OK] Establishing secure connection...</div>
+                <div class="boot-line" id="bootLine4">[OK] Decrypting portfolio data...</div>
+                <div class="boot-line" id="bootLine5">[SUCCESS] Access granted. Welcome.</div>
+            </div>
+            <div class="boot-progress">
+                <div class="boot-progress-bar" id="bootProgressBar"></div>
+            </div>
+            <div class="boot-percentage" id="bootPercentage">0%</div>
+        </div>
+    </div>
+
+    <!-- MATRIX RAIN CANVAS -->
+    <canvas id="matrixCanvas" class="matrix-canvas"></canvas>
+
+    <!-- SCANLINES OVERLAY -->
+    <div class="scanlines"></div>
+
+    <!-- GLITCH OVERLAY -->
+    <div class="glitch-overlay" id="glitchOverlay"></div>
+
+    <!-- CURSOR TRAIL -->
+    <div class="cursor-trail" id="cursorTrail"></div>
+
+    <!-- NAVIGATION -->
+    <nav class="cyber-nav" id="cyberNav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo glitch-hover" data-text="EL://">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">EL</span>
+                <span class="logo-slash">://</span>
+                <span class="logo-bracket">]</span>
+                <span class="cursor-blink">_</span>
+            </a>
+            
+            <div class="nav-status">
+                <span class="status-dot"></span>
+                <span class="status-text">SYSTEM ONLINE</span>
+            </div>
+
+            <!-- Language Toggle -->
+            <button class="lang-toggle" id="langToggle" aria-label="Change language">
+                <span class="lang-flag" id="langFlag">🇺🇸</span>
+                <span class="lang-code" id="langCode">EN</span>
+            </button>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-index="01">
+                        <span class="link-index">01.</span>
+                        <span class="link-text">about()</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-index="02">
+                        <span class="link-index">02.</span>
+                        <span class="link-text">skills()</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-index="03">
+                        <span class="link-index">03.</span>
+                        <span class="link-text">projects()</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link" data-index="04">
+                        <span class="link-index">04.</span>
+                        <span class="link-text">experience()</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link cta-link">
+                        <span class="link-text">contact()</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+        <div class="hero-grid-bg"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="term-btn red"></span>
+                            <span class="term-btn yellow"></span>
+                            <span class="term-btn green"></span>
+                        </div>
+                        <span class="terminal-title">ezequiel@portfolio:~</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command typing" id="heroCommand">whoami</span>
+                        </div>
+                        <div class="terminal-output" id="heroOutput">
+                            <span class="output-text"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-intro">
+                    <p class="hero-greeting glitch-text" data-text="// HELLO WORLD" data-i18n="hero.greeting">// HELLO WORLD</p>
+                    <h1 class="hero-name">
+                        <span class="name-line">EZEQUIEL</span>
+                        <span class="name-line neon-text">LIMA</span>
+                    </h1>
+                    <h2 class="hero-title typewriter" id="heroTitle"></h2>
+                </div>
+
+                <p class="hero-description" data-i18n="hero.description">
+                    <span class="desc-bracket">&lt;</span>
+                    I build <span class="highlight">scalable systems</span>, design <span class="highlight">secure APIs</span>, 
+                    and architect <span class="highlight">robust backends</span>. Currently infiltrating the 
+                    <span class="highlight">full-stack</span> domain.
+                    <span class="desc-bracket">/&gt;</span>
+                </p>
+
+                <div class="hero-cta">
+                    <a href="#projects" class="cyber-btn primary">
+                        <span class="btn-glitch" data-text="VIEW_PROJECTS" data-i18n="hero.cta.projects">VIEW_PROJECTS</span>
+                        <span class="btn-icon">&gt;_</span>
+                    </a>
+                    <a href="#contact" class="cyber-btn secondary">
+                        <span class="btn-glitch" data-text="INITIATE_CONTACT" data-i18n="hero.cta.contact">INITIATE_CONTACT</span>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-value counter" data-target="10">0</span>
+                        <span class="stat-label" data-i18n="hero.stats.projects">PROJECTS</span>
+                    </div>
+                    <div class="stat-divider">|</div>
+                    <div class="stat-item">
+                        <span class="stat-value counter" data-target="2">0</span>
+                        <span class="stat-label" data-i18n="hero.stats.years">YEARS EXP</span>
+                    </div>
+                    <div class="stat-divider">|</div>
+                    <div class="stat-item">
+                        <span class="stat-value counter" data-target="500">0</span>
+                        <span class="stat-label" data-i18n="hero.stats.commits">COMMITS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="profile-container">
+                    <div class="profile-hex">
+                        <div class="hex-border"></div>
+                        <div class="hex-glow"></div>
+                        <div class="profile-image">
+                            <img src="../PORTFOLIOGPT/foto-perfil.jpg" alt="Ezequiel Lima" id="profileImg">
+                            <div class="profile-overlay"></div>
+                            <div class="profile-scanline"></div>
+                        </div>
+                    </div>
+                    <div class="profile-data">
+                        <div class="data-line">
+                            <span class="data-label" data-i18n="hero.data.status">STATUS:</span>
+                            <span class="data-value online" data-i18n="hero.data.online">ONLINE</span>
+                        </div>
+                        <div class="data-line">
+                            <span class="data-label" data-i18n="hero.data.location">LOCATION:</span>
+                            <span class="data-value" data-i18n="hero.data.country">BRAZIL</span>
+                        </div>
+                        <div class="data-line">
+                            <span class="data-label" data-i18n="hero.data.availability">AVAILABILITY:</span>
+                            <span class="data-value available" data-i18n="hero.data.open">OPEN FOR WORK</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="floating-elements">
+                    <div class="float-code float-1">
+                        <code>const developer = "elite";</code>
+                    </div>
+                    <div class="float-code float-2">
+                        <code>while(alive) { code(); }</code>
+                    </div>
+                    <div class="float-code float-3">
+                        <code>print("Hello, recruiter!")</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span class="scroll-text">SCROLL_DOWN</span>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section section" id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">&lt;section id="about"&gt;</span>
+                <h2 class="section-title glitch-hover" data-text="ABOUT_ME">
+                    <span class="title-index">01.</span>
+                    <span data-i18n="about.title">ABOUT</span><span class="neon-text" data-i18n="about.title2">_ME</span>
+                </h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                            <span class="code-filename">developer.py</span>
+                        </div>
+                        <pre class="code-content"><code><span class="keyword">class</span> <span class="class-name">Developer</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(<span class="param">self</span>):
+        <span class="param">self</span>.<span class="attr">name</span> = <span class="string">"Ezequiel Lima"</span>
+        <span class="param">self</span>.<span class="attr">role</span> = <span class="string">"Backend Developer"</span>
+        <span class="param">self</span>.<span class="attr">location</span> = <span class="string">"Brazil"</span>
+        <span class="param">self</span>.<span class="attr">languages</span> = [<span class="string">"Python"</span>, <span class="string">"JavaScript"</span>]
+        
+    <span class="keyword">def</span> <span class="function">get_skills</span>(<span class="param">self</span>):
+        <span class="keyword">return</span> {
+            <span class="string">"backend"</span>: [<span class="string">"FastAPI"</span>, <span class="string">"Django"</span>, <span class="string">"Flask"</span>],
+            <span class="string">"database"</span>: [<span class="string">"PostgreSQL"</span>, <span class="string">"Redis"</span>],
+            <span class="string">"devops"</span>: [<span class="string">"Docker"</span>, <span class="string">"Git"</span>, <span class="string">"Linux"</span>]
+        }
+        
+    <span class="keyword">def</span> <span class="function">say_hello</span>(<span class="param">self</span>):
+        <span class="keyword">print</span>(<span class="string">"Let's build something epic!"</span>)
+
+<span class="comment"># Initialize</span>
+<span class="variable">ezequiel</span> = <span class="class-name">Developer</span>()
+<span class="variable">ezequiel</span>.<span class="function">say_hello</span>()</code></pre>
+                    </div>
+                    
+                    <div class="about-description">
+                        <p data-i18n="about.p1">
+                            <span class="highlight-bracket">[</span> I'm a <strong class="neon-text">backend-focused Python developer</strong> 
+                            with an obsession for building systems that don't just work—they <em>scale</em>. 
+                            <span class="highlight-bracket">]</span>
+                        </p>
+                        <p data-i18n="about.p2">
+                            My journey started with automating boring stuff and quickly evolved into 
+                            designing <strong>clean APIs</strong> and <strong>robust database architectures</strong>. 
+                            I believe in writing code that future developers (including future me) will thank me for.
+                        </p>
+                        <p data-i18n="about.p3">
+                            Currently infiltrating the <strong class="neon-text">full-stack</strong> realm, 
+                            learning modern frontend technologies while maintaining my dedication to 
+                            rock-solid backend foundations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-features">
+                    <div class="feature-card" data-aos="fade-up">
+                        <div class="feature-icon">
+                            <span class="icon-text">&lt;/&gt;</span>
+                        </div>
+                        <h3 class="feature-title" data-i18n="about.features.api.title">Clean APIs</h3>
+                        <p class="feature-desc" data-i18n="about.features.api.desc">RESTful APIs built with FastAPI and Django. Documented, tested, and production-ready.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <span class="icon-text">DB</span>
+                        </div>
+                        <h3 class="feature-title" data-i18n="about.features.database.title">Database Design</h3>
+                        <p class="feature-desc" data-i18n="about.features.database.desc">PostgreSQL optimization, efficient queries, and scalable data modeling.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <span class="icon-text">⚡</span>
+                        </div>
+                        <h3 class="feature-title" data-i18n="about.features.performance.title">Performance</h3>
+                        <p class="feature-desc" data-i18n="about.features.performance.desc">Optimized code, caching strategies, and systems built for high traffic.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <span class="icon-text">🔒</span>
+                        </div>
+                        <h3 class="feature-title" data-i18n="about.features.security.title">Security First</h3>
+                        <p class="feature-desc" data-i18n="about.features.security.desc">Authentication, encryption, and secure coding practices as standard.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <span class="section-tag closing">&lt;/section&gt;</span>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills-section section" id="skills">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">&lt;section id="skills"&gt;</span>
+                <h2 class="section-title glitch-hover" data-text="TECH_STACK">
+                    <span class="title-index">02.</span>
+                    <span data-i18n="skills.title">TECH</span><span class="neon-text" data-i18n="skills.title2">_STACK</span>
+                </h2>
+            </div>
+
+            <div class="skills-terminal">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="term-btn red"></span>
+                            <span class="term-btn yellow"></span>
+                            <span class="term-btn green"></span>
+                        </div>
+                        <span class="terminal-title">skills.sh</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <span class="prompt">$</span>
+                                <span class="command">cat backend.txt</span>
+                            </div>
+                            <div class="skills-grid">
+                                <div class="skill-item" data-skill="Python">
+                                    <div class="skill-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                                    </div>
+                                    <span class="skill-name">Python</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-level="95"></div></div>
+                                </div>
+                                <div class="skill-item" data-skill="FastAPI">
+                                    <div class="skill-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI">
+                                    </div>
+                                    <span class="skill-name">FastAPI</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-level="90"></div></div>
+                                </div>
+                                <div class="skill-item" data-skill="Django">
+                                    <div class="skill-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+                                    </div>
+                                    <span class="skill-name">Django</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-level="85"></div></div>
+                                </div>
+                                <div class="skill-item" data-skill="Flask">
+                                    <div class="skill-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask">
+                                    </div>
+                                    <span class="skill-name">Flask</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-level="80"></div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <span class="prompt">$</span>
+                                <span class="command">cat database.txt</span>
+                            </div>
+                            <div class="skills-grid">
+                                <div class="skill-item" data-skill="PostgreSQL">
+                                    <div class="skill-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                                    </div>
+                                    <span class="skill-name">PostgreSQL</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-level="88"></div></div>
+                                </div>
+                                <div class="skill-item" data-skill="Redis">
+                                    <div class="skill-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis">
+                                    </div>
+                                    <span class="skill-name">Redis</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-level="75"></div></div>
+                                </div>
+                                <div class="skill-item" data-skill="MongoDB">
+                                    <div class="skill-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                                    </div>
+                                    <span class="skill-name">MongoDB</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-level="70"></div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <span class="prompt">$</span>
+                                <span class="command">cat devops.txt</span>
+                            </div>
+                            <div class="skills-grid">
+                                <div class="skill-item" data-skill="Docker">
+                                    <div class="skill-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                                    </div>
+                                    <span class="skill-name">Docker</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-level="85"></div></div>
+                                </div>
+                                <div class="skill-item" data-skill="Git">
+                                    <div class="skill-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                                    </div>
+                                    <span class="skill-name">Git</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-level="90"></div></div>
+                                </div>
+                                <div class="skill-item" data-skill="Linux">
+                                    <div class="skill-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+                                    </div>
+                                    <span class="skill-name">Linux</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-level="80"></div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <span class="prompt">$</span>
+                                <span class="command">cat frontend.txt</span>
+                            </div>
+                            <div class="skills-grid">
+                                <div class="skill-item" data-skill="JavaScript">
+                                    <div class="skill-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                                    </div>
+                                    <span class="skill-name">JavaScript</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-level="75"></div></div>
+                                </div>
+                                <div class="skill-item" data-skill="HTML5">
+                                    <div class="skill-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                                    </div>
+                                    <span class="skill-name">HTML5</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-level="85"></div></div>
+                                </div>
+                                <div class="skill-item" data-skill="CSS3">
+                                    <div class="skill-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                                    </div>
+                                    <span class="skill-name">CSS3</span>
+                                    <div class="skill-bar"><div class="skill-progress" data-level="80"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <span class="section-tag closing">&lt;/section&gt;</span>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects-section section" id="projects">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">&lt;section id="projects"&gt;</span>
+                <h2 class="section-title glitch-hover" data-text="MY_WORK">
+                    <span class="title-index">03.</span>
+                    <span data-i18n="projects.title">MY</span><span class="neon-text" data-i18n="projects.title2">_WORK</span>
+                </h2>
+            </div>
+
+            <!-- Featured Project -->
+            <div class="featured-project">
+                <div class="project-preview">
+                    <div class="preview-window">
+                        <div class="preview-header">
+                            <div class="preview-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="preview-url">https://api.ecommerce.dev</span>
+                        </div>
+                        <div class="preview-content">
+                            <div class="api-visualization">
+                                <div class="api-request">
+                                    <span class="method post">POST</span>
+                                    <span class="endpoint">/api/v1/orders</span>
+                                </div>
+                                <div class="api-response">
+                                    <pre><code>{
+  "status": "success",
+  "order_id": "ORD-2024-001",
+  "total": 299.99,
+  "items": 3
+}</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-label" data-i18n="projects.featured.label">// FEATURED PROJECT</span>
+                    <h3 class="project-name" data-i18n="projects.featured.name">E-commerce REST API</h3>
+                    <div class="project-description">
+                        <p data-i18n="projects.featured.desc">Complete e-commerce backend with <strong>JWT authentication</strong>, shopping cart management, 
+                        real-time order processing, and admin dashboard. Built for <strong>high performance</strong> 
+                        and <strong>scalability</strong>.</p>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">JWT</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ezequiellima" class="project-link" target="_blank">
+                            <span class="link-icon">⌘</span>
+                            <span data-i18n="projects.view.code">VIEW_CODE</span>
+                        </a>
+                        <a href="#" class="project-link" target="_blank">
+                            <span class="link-icon">◎</span>
+                            <span data-i18n="projects.view.demo">LIVE_DEMO</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="projects-grid">
+                <article class="project-card" data-aos="fade-up">
+                    <div class="card-header">
+                        <div class="card-icon">📊</div>
+                        <div class="card-links">
+                            <a href="#" class="card-link" aria-label="GitHub"><span>⌘</span></a>
+                            <a href="#" class="card-link" aria-label="External Link"><span>↗</span></a>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Analytics Dashboard API</h3>
+                    <p class="card-description">REST API for data analysis with Redis cache, rate limiting, and comprehensive Swagger documentation.</p>
+                    <div class="card-tech">
+                        <span>FastAPI</span>
+                        <span>Redis</span>
+                        <span>Pandas</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header">
+                        <div class="card-icon">💬</div>
+                        <div class="card-links">
+                            <a href="#" class="card-link" aria-label="GitHub"><span>⌘</span></a>
+                            <a href="#" class="card-link" aria-label="External Link"><span>↗</span></a>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Real-time Chat API</h3>
+                    <p class="card-description">WebSocket-based messaging backend with room support, message history, and push notifications.</p>
+                    <div class="card-tech">
+                        <span>Python</span>
+                        <span>WebSocket</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header">
+                        <div class="card-icon">🔐</div>
+                        <div class="card-links">
+                            <a href="#" class="card-link" aria-label="GitHub"><span>⌘</span></a>
+                            <a href="#" class="card-link" aria-label="External Link"><span>↗</span></a>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Auth Microservice</h3>
+                    <p class="card-description">Enterprise authentication with OAuth2, refresh tokens, rate limiting, and complete audit logging.</p>
+                    <div class="card-tech">
+                        <span>FastAPI</span>
+                        <span>OAuth2</span>
+                        <span>JWT</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-header">
+                        <div class="card-icon">⚙️</div>
+                        <div class="card-links">
+                            <a href="#" class="card-link" aria-label="GitHub"><span>⌘</span></a>
+                            <a href="#" class="card-link" aria-label="External Link"><span>↗</span></a>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Data Processing Pipeline</h3>
+                    <p class="card-description">Async task queue system with scheduled jobs, PDF report generation, and error handling.</p>
+                    <div class="card-tech">
+                        <span>Celery</span>
+                        <span>Redis</span>
+                        <span>Python</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-header">
+                        <div class="card-icon">📋</div>
+                        <div class="card-links">
+                            <a href="#" class="card-link" aria-label="GitHub"><span>⌘</span></a>
+                            <a href="#" class="card-link" aria-label="External Link"><span>↗</span></a>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Task Manager API</h3>
+                    <p class="card-description">Project management backend with full CRUD, user permissions, and notification system.</p>
+                    <div class="card-tech">
+                        <span>Django</span>
+                        <span>DRF</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card-header">
+                        <div class="card-icon">🤖</div>
+                        <div class="card-links">
+                            <a href="#" class="card-link" aria-label="GitHub"><span>⌘</span></a>
+                            <a href="#" class="card-link" aria-label="External Link"><span>↗</span></a>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Automation Scripts</h3>
+                    <p class="card-description">Collection of Python automation scripts for data scraping, file processing, and workflow automation.</p>
+                    <div class="card-tech">
+                        <span>Python</span>
+                        <span>Selenium</span>
+                        <span>BeautifulSoup</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="projects-cta">
+                <a href="https://github.com/ezequiellima" class="cyber-btn secondary" target="_blank">
+                    <span class="btn-glitch" data-text="VIEW_ALL_ON_GITHUB" data-i18n="projects.github">VIEW_ALL_ON_GITHUB</span>
+                    <span class="btn-icon">→</span>
+                </a>
+            </div>
+            
+            <span class="section-tag closing">&lt;/section&gt;</span>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="experience-section section" id="experience">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">&lt;section id="experience"&gt;</span>
+                <h2 class="section-title glitch-hover" data-text="JOURNEY">
+                    <span class="title-index">04.</span>
+                    <span data-i18n="experience.title">MY</span><span class="neon-text" data-i18n="experience.title2">_JOURNEY</span>
+                </h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <span class="marker-dot"></span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date" data-i18n="experience.item1.date">2024 - PRESENT</div>
+                        <h3 class="timeline-title" data-i18n="experience.item1.title">Backend Developer</h3>
+                        <span class="timeline-company" data-i18n="experience.item1.company">Freelance Projects</span>
+                        <p class="timeline-description" data-i18n="experience.item1.desc">
+                            Building complete backend systems for clients, from API architecture to database design. 
+                            Specializing in Python, FastAPI, and Django for high-performance applications.
+                        </p>
+                        <div class="timeline-tech">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker">
+                        <span class="marker-dot"></span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date" data-i18n="experience.item2.date">2023 - 2024</div>
+                        <h3 class="timeline-title" data-i18n="experience.item2.title">Intensive Studies</h3>
+                        <span class="timeline-company" data-i18n="experience.item2.company">Self-taught Training</span>
+                        <p class="timeline-description" data-i18n="experience.item2.desc">
+                            Deep dive into software architecture, API design patterns, DevOps practices, 
+                            and industry best practices. Built multiple projects to solidify knowledge.
+                        </p>
+                        <div class="timeline-tech">
+                            <span>Architecture</span>
+                            <span>APIs</span>
+                            <span>DevOps</span>
+                            <span>Testing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <span class="marker-dot"></span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date" data-i18n="experience.item3.date">2022 - 2023</div>
+                        <h3 class="timeline-title" data-i18n="experience.item3.title">Beginning of the Journey</h3>
+                        <span class="timeline-company" data-i18n="experience.item3.company">First Projects</span>
+                        <p class="timeline-description" data-i18n="experience.item3.desc">
+                            Started coding journey with Python fundamentals, version control with Git, 
+                            and building first personal automation projects. The beginning of an obsession.
+                        </p>
+                        <div class="timeline-tech">
+                            <span>Python</span>
+                            <span>Git</span>
+                            <span>Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <span class="section-tag closing">&lt;/section&gt;</span>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section section" id="contact">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">&lt;section id="contact"&gt;</span>
+                <h2 class="section-title glitch-hover" data-text="CONTACT">
+                    <span class="title-index">05.</span>
+                    <span data-i18n="contact.title">GET_IN</span><span class="neon-text" data-i18n="contact.title2">_TOUCH</span>
+                </h2>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-terminal">
+                    <div class="terminal-window large">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="term-btn red"></span>
+                                <span class="term-btn yellow"></span>
+                                <span class="term-btn green"></span>
+                            </div>
+                            <span class="terminal-title">send_message.sh</span>
+                        </div>
+                        <div class="terminal-body">
+                            <form class="contact-form" id="contactForm">
+                                <div class="form-line">
+                                    <span class="prompt">$</span>
+                                    <span class="command">set NAME=</span>
+                                    <input type="text" name="name" id="contactName" placeholder='"Your Name"' required>
+                                </div>
+                                <div class="form-line">
+                                    <span class="prompt">$</span>
+                                    <span class="command">set EMAIL=</span>
+                                    <input type="email" name="email" id="contactEmail" placeholder='"your@email.com"' required>
+                                </div>
+                                <div class="form-line">
+                                    <span class="prompt">$</span>
+                                    <span class="command">set SUBJECT=</span>
+                                    <input type="text" name="subject" id="contactSubject" placeholder='"Project Inquiry"' required>
+                                </div>
+                                <div class="form-line message-line">
+                                    <span class="prompt">$</span>
+                                    <span class="command">echo MESSAGE &gt;&gt;</span>
+                                    <textarea name="message" id="contactMessage" placeholder='"Your message here..."' required></textarea>
+                                </div>
+                                <div class="form-line submit-line">
+                                    <span class="prompt">$</span>
+                                    <button type="submit" class="submit-btn">
+                                        <span class="btn-text">./send_message.sh</span>
+                                        <span class="btn-loading">SENDING...</span>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="form-response" id="formResponse">
+                                <span class="response-text"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3 class="info-title" data-i18n="contact.channels">// DIRECT_CHANNELS</h3>
+                        <div class="info-links">
+                            <a href="mailto:ezequiel@email.com" class="info-link">
+                                <span class="link-icon">📧</span>
+                                <span class="link-text">ezequiel@email.com</span>
+                            </a>
+                            <a href="https://linkedin.com/in/ezequiellima" class="info-link" target="_blank">
+                                <span class="link-icon">💼</span>
+                                <span class="link-text">linkedin.com/in/ezequiellima</span>
+                            </a>
+                            <a href="https://github.com/ezequiellima" class="info-link" target="_blank">
+                                <span class="link-icon">⌘</span>
+                                <span class="link-text">github.com/ezequiellima</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="availability-card">
+                        <div class="availability-status">
+                            <span class="status-indicator online"></span>
+                            <span class="status-text" data-i18n="contact.status">CURRENTLY AVAILABLE</span>
+                        </div>
+                        <p class="availability-text" data-i18n="contact.status.text">
+                            Open for <strong>freelance projects</strong>, <strong>full-time opportunities</strong>, 
+                            or just a good tech conversation. Response time: ~24h.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <span class="section-tag closing">&lt;/section&gt;</span>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="cyber-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-bracket">[</span>
+                        <span class="logo-text">EZEQUIEL_LIMA</span>
+                        <span class="logo-bracket">]</span>
+                    </a>
+                    <p class="footer-tagline" data-i18n="footer.tagline">// Building the future, one commit at a time.</p>
+                </div>
+
+                <div class="footer-nav">
+                    <h4 class="footer-title" data-i18n="footer.nav">NAVIGATION</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">about()</a></li>
+                        <li><a href="#skills">skills()</a></li>
+                        <li><a href="#projects">projects()</a></li>
+                        <li><a href="#experience">experience()</a></li>
+                        <li><a href="#contact">contact()</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4 class="footer-title" data-i18n="footer.connect">CONNECT</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/ezequiellima" class="social-link" target="_blank" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/in/ezequiellima" class="social-link" target="_blank" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="mailto:ezequiel@email.com" class="social-link" aria-label="Email">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">
+                    <span class="copy-symbol">©</span> <span data-i18n="footer.copyright">2026 EZEQUIEL_LIMA.exe</span>
+                    <span class="separator">|</span> 
+                    <span data-i18n="footer.made">Built with</span> <span class="heart">♥</span> and lots of <span class="coffee">☕</span>
+                </p>
+                <p class="tech-credit">
+                    <span class="bracket">&lt;</span>
+                    <span data-i18n="footer.tech">Pure JavaScript + CSS Magic</span>
+                    <span class="bracket">/&gt;</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Easter Egg - Konami Code Hint -->
+        <div class="easter-egg-hint" id="easterEggHint">
+            <span>↑↑↓↓←→←→BA</span>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <span class="top-icon">↑</span>
+        <span class="top-text">TOP</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
