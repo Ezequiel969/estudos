@@ -1,6 +1,0 @@
-nome = input('Qual seu nome? ')
-idade = input('Qual sua idade? ')
-idade_dobrada = int(idade) + int(idade)
-print(f'O nome digitado foi: {nome}')
-print(f'A idade digitada foi: {int (idade)}')
-print(f'A idade dobrada é {int (idade_dobrada)}')
