@@ -1,23 +1,11 @@
-# Variáveis são usadas para salvar algo na memória do computador.
-# PEP8: inicie variáveis com letras minúsculas, pode usar
-# números e underline _.
-# O sinal de = é o operador de atribuição. Ele é usado para
-# atribuir um valor a um nome (variável).
-# Uso: nome_variavel = expressão
+# AULA 7 - Variáveis
+# Variáveis guardam valores na memória
+# = é o operador de atribuição (guarda um valor)
+# Padrão PEP8: letras_minusculas_com_underline
 
-# nome_completo = 'Luiz Otávio Miranda'
-# soma_dois_mais_dois = 2 + 2
-# int_um = bool('1')
-# print(int_um, type(int_um))
-# print(nome_completo, soma_dois_mais_dois)
+nome = 'Kiel'              # Variável do tipo string
+idade = 17                  # Variável do tipo int
+maior_de_idade = idade >= 18  # Variável do tipo bool (comparação)
 
-# nome_completo = 'Ezequiel Eclesiastes de Lima'
-# soma_dois_mais_dois = 2 + 2
-# int_um = int('1')
-# print(nome_completo, soma_dois_mais_dois, sep='\n')
-# print(int_um)
-nome = 'Kiel'
-idade = 17
-maior_de_idade = idade >= 18
 print('Nome:', nome, 'Idade:', idade)
-print('É maior? ', maior_de_idade)
+print('É maior? ', maior_de_idade)  # False, pois 17 < 18

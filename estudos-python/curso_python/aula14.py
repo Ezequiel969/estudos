@@ -1,4 +1,6 @@
-# Variáveis que serão inseridas na string
+# AULA 14 - Método .format() para formatar strings
+# Alternativa ao f-string, usa placeholders {nome}
+
 a = 'AAAAA'
 b = 'BBBBBB'
 c = 1.1

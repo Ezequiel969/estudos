@@ -1,9 +1,6 @@
-# Tipo de dado bool (boolean)
-# Ao questionar algo em um programa,
-# só existem duas respostas possíveis:
-# sim (True) ou não (False).
-# Existem vários operadores para "questionar".
-# Dentre eles o ==, que é um operador lógico que
-# questiona se um valor é igual a outro
-print(10 == 10) # -> True, Sim, Verdadeiro
-print(10 == 11) # -> False, Não, Falso
+# AULA 5 - Tipo booleano (bool)
+# Só tem dois valores possíveis: True (verdadeiro) ou False (falso)
+# == é o operador de igualdade (compara se dois valores são iguais)
+
+print(10 == 10)  # True - 10 é igual a 10
+print(10 == 11)  # False - 10 não é igual a 11

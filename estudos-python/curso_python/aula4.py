@@ -1,21 +1,17 @@
-# Tipos int e float
-# int -> Número inteiro
-# O tipo int representa qualquer número
-# positivo ou negativo. int sem sinal é considerado
-# positivo.
-print(11) # int
-print(-11) # int
-print(0)
+# AULA 4 - Tipos numéricos: int e float
+# int = números inteiros (sem vírgula)
+# float = números decimais (com ponto)
 
-# float -> Número com ponto flutuante
-# O tipo float representa qualquer número
-# positivo ou negativo com ponto flutuante.
-# float sem sinal é considerado positivo.
+# Exemplos de int (inteiros)
+print(11)   # positivo
+print(-11)  # negativo
+print(0)    # zero
+
+# Exemplos de float (decimais)
 print(1.1, 10.11)
 print(0.0, -1.5)
 
-# A função type mostra o tipo que o Python
-# inferiu ao valor.
-print(type('Kiel'))
-print(type(0)    )
-print(type(1.1), type(-1.1), type (0.0))
+# type() mostra o tipo do dado
+print(type('Kiel'))  # <class 'str'>
+print(type(0))       # <class 'int'>
+print(type(1.1), type(-1.1), type(0.0))  # <class 'float'>
