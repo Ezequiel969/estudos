@@ -4,14 +4,24 @@ informe se este número é par ou ímpar. Caso o usuário não digite um número
 inteiro, informe que não é um número inteiro.
 """
 numero = input('Digite um número inteiro: ')
-try:
-    numero_inteiro = int(numero) 
+if numero.isdigit():
+    numero_inteiro = int(numero)
     if numero_inteiro % 2 == 0:
         print('O número é par')
     else:
-        print('O número é impar')
-except:
-    print('Você não digitou um valor inteiro') 
+        print('O número é ímpar')
+else:
+    print('Você não digitou um valor inteiro')
+    
+
+# try:
+#     numero_inteiro = int(numero) 
+#     if numero_inteiro % 2 == 0:
+#         print('O número é par')
+#     else:
+#         print('O número é impar')
+# except:
+#     print('Você não digitou um valor inteiro') 
 
 """
 Faça um programa que pergunte a hora ao usuário e, baseando-se no horário 
@@ -29,11 +39,11 @@ try:
     elif hora >= 18 and hora <= 23:
         print('Boa noite')
     else:
-        print('Hora inválida')        
-        
+        print('Hora inválida')   
 except:
    print('Valor inválido') 
-    
+       
+
     
     
     
@@ -44,16 +54,15 @@ menos escreva "Seu nome é curto"; se tiver entre 5 e 6 letras, escreva
 """
 
 nome = input('Digite seu nome:')
-try:
-    nome_str = str(nome)
-    if len(nome_str) < 4:
+
+if nome.isalpha():
+    if len(nome) <= 4:
         print('Seu nome é curto')
-    elif len(nome_str) > 4 and len(nome_str) <= 5:
+    elif len(nome) <= 6:
         print('Seu nome é normal!')
     else:
         print('Seu nome é muito grande')
-    
-except:
+else:
     print('Você não digitou um nome válido!')
     
     
