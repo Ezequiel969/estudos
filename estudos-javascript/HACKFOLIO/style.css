@@ -117,6 +117,7 @@ html {
     font-size: 16px;
     scrollbar-width: thin;
     scrollbar-color: var(--neon-green) var(--bg-primary);
+    overflow-x: hidden;
 }
 
 body {
