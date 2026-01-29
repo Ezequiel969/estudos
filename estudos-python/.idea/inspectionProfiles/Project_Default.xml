@@ -1,0 +1,6 @@
+<component name="InspectionProfile">
+  <profile version="1.0">
+    <option name="myName" value="Project_Default" />
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="ERROR" enabled_by_default="true" />
+  </profile>
+</component>

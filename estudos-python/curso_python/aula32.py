@@ -42,19 +42,36 @@ Faça um programa que peça o primeiro nome do usuário. Se o nome tiver 4 letra
 menos escreva "Seu nome é curto"; se tiver entre 5 e 6 letras, escreva 
 "Seu nome é normal"; maior que 6 escreva "Seu nome é muito grande". 
 """
+# nome = input('Digite seu nome: ')
+# tamanho_nome = len(nome)
+
+# if tamanho_nome > 1:
+#     if tamanho_nome <= 4:
+#         print('Seu nome é curto')
+#     elif tamanho_nome >= 5 and tamanho_nome <= 6:
+#         print('Seu nome é normal')
+#     else:
+#         print('Seu nome é muito grande')
+# else:
+#     print('Digite um nome válido')
+
+
 
 nome = input('Digite seu nome:')
-try:
-    nome_str = str(nome)
-    if len(nome_str) < 4:
+
+nome_sem_espacos = nome.replace(' ', '')
+
+if (nome_sem_espacos.isalpha()):
+    if len(nome_sem_espacos) <= 4:
         print('Seu nome é curto')
-    elif len(nome_str) > 4 and len(nome_str) <= 5:
+    elif len(nome_sem_espacos) > 4 and len(nome_sem_espacos) <= 5:
         print('Seu nome é normal!')
     else:
         print('Seu nome é muito grande')
-    
-except:
+else:
     print('Você não digitou um nome válido!')
+    
+    
     
     
     
