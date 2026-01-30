@@ -21,8 +21,18 @@ while True:
         print(numero1_float * numero2_float)
     elif operador == '/':
         print(numero1_float / numero2_float)
-    else:    
-        operador = input('Digite um operador válido: ')
+    else:
+        while operador not in ['+', '-', '*', '/']:
+            operador = input('Digite um operador válido: ')
+        # Agora calcula com o operador válido
+        if operador == '+':
+            print(numero1_float + numero2_float)
+        elif operador == '-':
+            print(numero1_float - numero2_float)
+        elif operador == '*':
+            print(numero1_float * numero2_float)
+        elif operador == '/':
+            print(numero1_float / numero2_float)
     
         
         
@@ -36,6 +46,8 @@ while True:
     break
 
     
+    
+      
 
 
     
