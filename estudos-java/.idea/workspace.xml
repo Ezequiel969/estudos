@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4381e3a-8a73-4aba-adf1-d0cc1c304d64" name="Changes" comment="">
-<<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/src/academy/lima/kiel/introducao/cursonelio/javaOO/aplications/ProgramaProduto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/academy/lima/kiel/introducao/cursonelio/javaOO/entities/Produto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../estudos-python/curso_python/aula41.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../estudos-python/curso_python/aula42.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/academy/lima/kiel/introducao/cursonelio/javaOO/ClassesProblemaOO/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/academy/lima/kiel/introducao/cursonelio/javaOO/entities/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/academy/lima/kiel/introducao/cursonelio/javaOO/ProblemaSemOO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/academy/lima/kiel/introducao/cursonelio/javaOO/ProblemaTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/academy/lima/kiel/introducao/cursonelio/javaOO/aplications/ProgramTriangle.java" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
->>>>>>> 0805bc7e7aea974eea94f0648ee14de24e8da628
+      <change beforePath="$PROJECT_DIR$/../estudos-python/curso_python/aula40.py" beforeDir="false" afterPath="$PROJECT_DIR$/../estudos-python/curso_python/aula40.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,87 +39,64 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Aula03TiposPrimitivosExercicio.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Aula05EstruturasCondicionais.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Aula05EstruturasCondicionais02.executor&quot;: &quot;Run&quot;,
-<<<<<<< HEAD
-    &quot;Application.EstoqueProdutos.executor&quot;: &quot;Run&quot;,
-=======
->>>>>>> 0805bc7e7aea974eea94f0648ee14de24e8da628
-    &quot;Application.Exercicio02.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Exercicio03.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Exercicio04.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Exercicio05.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Exercicio06.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Exercicios01.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ExerciciosEstruturasCondicionais01.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ExerciciosEstruturasCondicionais02.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ExerciciosEstruturasCondicionais03.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ExerciciosEstruturasCondicionais04.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ExpressaoCondicionalTernaria47.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ExpressoesLogicas41.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ProblemaComOO.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SintaxeOpcional46.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-<<<<<<< HEAD
-    &quot;dev.sweep.assistant.data.RecentlyUsedFiles&quot;: &quot;src\\academy\\lima\\kiel\\introducao\\cursonelio\\javaOO\\entities\\Triangle.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\javaOO\\aplications\\ProgramaProduto.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\javaOO\\aplications\\ProgramTriangle.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\javaOO\\entities\\Produto.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\javaOO\\aplications\\EstoqueProdutos.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\javaOO\\entities\\Produtos.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\javaOO\\aplications\\ProgramStock.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\javaOO\\aplications\\ProblemaTriangle.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\Exercicio01.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\ExpressaoCondicionalTernaria47.java&quot;,
-=======
-    &quot;dev.sweep.assistant.data.RecentlyUsedFiles&quot;: &quot;src\\academy\\lima\\kiel\\introducao\\cursonelio\\Exercicio01.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\ExpressaoCondicionalTernaria47.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\Exercicio02.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\Exercicio03.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\SintaxeOpcional46.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\ExerciciosEstruturasCondicionais04.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\ExerciciosEstruturasCondicionais03.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\ExerciciosEstruturasCondicionais02.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\ExerciciosEstruturasCondicionais01.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\ExpressoesLogicas41.java&quot;,
->>>>>>> 0805bc7e7aea974eea94f0648ee14de24e8da628
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kiel/IdeaProjects/estudos/estudos-java&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;sweep.chatMode&quot;: &quot;Agent&quot;,
-    &quot;sweep.selectedModel&quot;: &quot;Auto&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Aula03TiposPrimitivosExercicio.executor": "Run",
+    "Application.Aula05EstruturasCondicionais.executor": "Run",
+    "Application.Aula05EstruturasCondicionais02.executor": "Run",
+    "Application.EstoqueProdutos.executor": "Run",
+    "Application.Exercicio02.executor": "Run",
+    "Application.Exercicio03.executor": "Run",
+    "Application.Exercicio04.executor": "Run",
+    "Application.Exercicio05.executor": "Run",
+    "Application.Exercicio06.executor": "Run",
+    "Application.Exercicios01.executor": "Run",
+    "Application.ExerciciosEstruturasCondicionais01.executor": "Run",
+    "Application.ExerciciosEstruturasCondicionais02.executor": "Run",
+    "Application.ExerciciosEstruturasCondicionais03.executor": "Run",
+    "Application.ExerciciosEstruturasCondicionais04.executor": "Run",
+    "Application.ExpressaoCondicionalTernaria47.executor": "Run",
+    "Application.ExpressoesLogicas41.executor": "Run",
+    "Application.ProblemaComOO.executor": "Run",
+    "Application.SintaxeOpcional46.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "ToolWindow.Run.ShowToolbar": "false",
+    "dev.sweep.assistant.data.RecentlyUsedFiles": "src\\academy\\lima\\kiel\\introducao\\cursonelio\\javaOO\\entities\\Triangle.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\javaOO\\aplications\\ProgramaProduto.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\javaOO\\aplications\\ProgramTriangle.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\javaOO\\entities\\Produto.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\javaOO\\aplications\\EstoqueProdutos.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\javaOO\\entities\\Produtos.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\javaOO\\aplications\\ProgramStock.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\javaOO\\aplications\\ProblemaTriangle.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\Exercicio01.java;src\\academy\\lima\\kiel\\introducao\\cursonelio\\ExpressaoCondicionalTernaria47.java",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Kiel/IdeaProjects/estudos/estudos-java",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "sweep.chatMode": "Agent",
+    "sweep.selectedModel": "Auto",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="Application.ProgramaProduto">
-=======
-  <component name="RunManager" selected="Application.ProblemaTriangle">
-    <configuration name="ExerciciosEstruturasCondicionais03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="academy.lima.kiel.introducao.cursonelio.ExerciciosEstruturasCondicionais03" />
-      <module name="estudos-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="academy.lima.kiel.introducao.cursonelio.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
->>>>>>> 0805bc7e7aea974eea94f0648ee14de24e8da628
-    <configuration name="ExerciciosEstruturasCondicionais04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="academy.lima.kiel.introducao.cursonelio.ExerciciosEstruturasCondicionais04" />
-      <module name="estudos-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="academy.lima.kiel.introducao.cursonelio.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+}]]></component>
+  <component name="RunManager" selected="Application.ExpressoesLogicas41">
     <configuration name="ExpressaoCondicionalTernaria47" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="academy.lima.kiel.introducao.cursonelio.ExpressaoCondicionalTernaria47" />
       <module name="estudos-java" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="academy.lima.kiel.introducao.cursonelio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpressoesLogicas41" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="academy.lima.kiel.introducao.cursonelio.javacore.ExpressoesLogicas41" />
+      <module name="estudos-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="academy.lima.kiel.introducao.cursonelio.javacore.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -174,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ExpressoesLogicas41" />
         <item itemvalue="Application.ProgramaProduto" />
         <item itemvalue="Application.ProgramTriangle" />
         <item itemvalue="Application.ExpressaoCondicionalTernaria47" />
         <item itemvalue="Application.SintaxeOpcional46" />
-        <item itemvalue="Application.ExerciciosEstruturasCondicionais04" />
       </list>
     </recent_temporary>
   </component>
@@ -205,15 +176,11 @@
       <workItem from="1769274498668" duration="843000" />
       <workItem from="1769300048969" duration="708000" />
       <workItem from="1769353823951" duration="59000" />
-<<<<<<< HEAD
       <workItem from="1769353895998" duration="13600000" />
       <workItem from="1769389726612" duration="856000" />
-=======
-      <workItem from="1769353895998" duration="342000" />
       <workItem from="1769427000135" duration="17000" />
       <workItem from="1769427063316" duration="26000" />
       <workItem from="1769427183065" duration="676000" />
->>>>>>> 0805bc7e7aea974eea94f0648ee14de24e8da628
     </task>
     <servers />
   </component>
