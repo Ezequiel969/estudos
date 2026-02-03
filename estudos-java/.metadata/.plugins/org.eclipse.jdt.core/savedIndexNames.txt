@@ -1,1 +1,0 @@
-INDEX VERSION 1.134+C:\Users\Kiel\IdeaProjects\estudos\estudos-java\.metadata\.plugins\org.eclipse.jdt.core
