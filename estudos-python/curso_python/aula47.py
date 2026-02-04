@@ -8,7 +8,7 @@ import os
 
 # palavra secreta que o usuário deve descobrir
 # você pode trocar por qualquer outra palavra (ex: 'python')
-palavra_secreta = 'perfume'
+palavra_secreta = 'rita lee'
 
 # string que armazenará as letras que o usuário acertou até agora
 # começamos vazia, e a cada acerto acrescentamos a letra
@@ -32,13 +32,25 @@ while True:
     # para depois da validação da entrada).
     numero_tentativas += 1
 
-    # validação: se o usuário digitou mais de um caractere, informamos
-    # que a entrada é inválida e usamos `continue` para pular o resto
-    # do loop e pedir outra entrada. Isso evita processar entradas
-    # incorretas (como palavras inteiras).
+    # validação: se o usuário digitou mais de um caractere, permitimos
+    # que seja um chute da palavra inteira. Se for exatamente a palavra
+    # secreta, o jogador vence imediatamente; caso contrário mostramos
+    # uma mensagem pedindo para digitar apenas uma letra ou a palavra.
     if len(letra_digitada) > 1:
-        print('Digite apenas uma letra.')
-        continue
+        chute = letra_digitada.strip()
+        if chute.lower() == palavra_secreta.lower():
+            comando_limpar = 'cls' if os.name == 'nt' else 'clear'
+            os.system(comando_limpar)
+            print('VOCÊ GANHOU!! PARABÉNS!')
+            print('A palavra era', palavra_secreta)
+            print('Tentativas:', numero_tentativas)
+
+            letras_acertadas = ''
+            numero_tentativas = 0
+            continue
+        else:
+            print('Digite apenas uma letra ou a palavra completa correta.')
+            continue
 
     # se a letra digitada estiver dentro da palavra secreta,
     # adicionamos essa letra à lista/string de letras acertadas.
@@ -53,7 +65,10 @@ while True:
     # ainda não foi descoberta.
     palavra_formada = ''
     for letra_secreta in palavra_secreta:
-        if letra_secreta in letras_acertadas:
+        # mostra espaços em branco diretamente para suportar frases
+        if letra_secreta == ' ':
+            palavra_formada += ' '
+        elif letra_secreta in letras_acertadas:
             # letra descoberta: adicionamos ao resultado visível
             palavra_formada += letra_secreta
         else:
@@ -67,10 +82,9 @@ while True:
     # secreta, o jogador descobriu todas as letras. Aí mostramos as
     # mensagens finais e os resultados.
     if palavra_formada == palavra_secreta:
-        # limpa a tela (em sistemas Unix o comando é 'clear'; em Windows
-        # o comando equivalente é 'cls'. O uso de os.system aqui é opcional
-        # e serve apenas para melhorar a visualização no terminal.)
-        os.system('clear')
+        # limpa a tela: usa 'cls' no Windows e 'clear' em outros sistemas
+        comando_limpar = 'cls' if os.name == 'nt' else 'clear'
+        os.system(comando_limpar)
         print('VOCÊ GANHOU!! PARABÉNS!')
         print('A palavra era', palavra_secreta)
         print('Tentativas:', numero_tentativas)
